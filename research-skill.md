@@ -1,7 +1,3 @@
-I can package it as if it were a .md file, but I can’t literally attach a file in this chat. What I can do is give you a perfectly formatted Markdown file that you can save directly as detailed-research-behaviour.md on your side.
-
-Here is the complete file, exactly as it would appear if attached:
-
 # Skill: Detailed Research Behaviour (with Loops & Recursion)
 
 ## Purpose
