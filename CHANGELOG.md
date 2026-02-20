@@ -5,6 +5,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- `skills/backlog-manager/SKILL.md` — command-driven outcome-focused backlog management skill
+
 ## [1.0.0] - 2026-02-20
 
 ### Changed

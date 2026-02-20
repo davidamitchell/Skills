@@ -9,6 +9,7 @@ a specific task to a high standard. Skills are format-compatible with the
 
 | Skill | Description |
 |---|---|
+| [backlog-manager](skills/backlog-manager/SKILL.md) | Command-driven outcome-focused backlog in a single file; add, refine, and track work items by observable result |
 | [research](skills/research/SKILL.md) | Rigorous, evidence-driven research using recursive decomposition and verification loops |
 | [strategy-author](skills/strategy-author/SKILL.md) | High-rigour strategy documents grounded in Rumelt and Porter frameworks |
 | [remove-ai-slop](skills/remove-ai-slop/SKILL.md) | Eliminates AI detection signals from text — statistical, structural, and alignment artifacts |
@@ -61,6 +62,8 @@ Skills/
 ├── decisions/                         # Architecture Decision Records
 │   └── 0001-adopt-skill-md-standard.md
 └── skills/                            # Skill directories
+    ├── backlog-manager/
+    │   └── SKILL.md
     ├── research/
     │   └── SKILL.md
     ├── strategy-author/
