@@ -9,12 +9,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
-- Canonical `skills/` directory structure using Claude Code Agent Skills format
+- Canonical `skills/` directory structure following the Agent Skills open standard
 - `skills/research/SKILL.md` — evidence-driven recursive research skill
 - `skills/strategy-author/SKILL.md` — Rumelt/Porter high-rigour strategy skill
 - `skills/remove-ai-slop/SKILL.md` — AI signal suppression and humanization skill
 - `skills/strategic-persuasion/SKILL.md` — cognitive rhetoric and persuasion skill
-- `README.md` with skills index table, installation guide, and usage examples
+- `README.md` with skills index, generic usage instructions, native tool install table, and repo structure
 - `PRD.md` with project requirements, goals, and success criteria
 - `PROGRESS.md` append-only build journal
 - `decisions/0001-adopt-skill-md-standard.md` architecture decision record
