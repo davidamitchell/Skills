@@ -8,6 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 
 - `skills/backlog-manager/SKILL.md` — command-driven outcome-focused backlog management skill
+- `skills/citation-discipline/SKILL.md` — claim–source binding and citation placement discipline skill
+- `skills/speculation-control/SKILL.md` — epistemic discipline and non-factual content labeling skill
 
 ## [1.0.0] - 2026-02-20
 

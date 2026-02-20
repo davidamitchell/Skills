@@ -10,7 +10,9 @@ a specific task to a high standard. Skills are format-compatible with the
 | Skill | Description |
 |---|---|
 | [backlog-manager](skills/backlog-manager/SKILL.md) | Command-driven outcome-focused backlog in a single file; add, refine, and track work items by observable result |
+| [citation-discipline](skills/citation-discipline/SKILL.md) | Binds every factual claim to a verifiable source at the point of assertion; enforces citation placement, source quality, and precision |
 | [research](skills/research/SKILL.md) | Rigorous, evidence-driven research using recursive decomposition and verification loops |
+| [speculation-control](skills/speculation-control/SKILL.md) | Enforces strict separation between evidence-based statements and speculative, interpretive, or subjective content |
 | [strategy-author](skills/strategy-author/SKILL.md) | High-rigour strategy documents grounded in Rumelt and Porter frameworks |
 | [remove-ai-slop](skills/remove-ai-slop/SKILL.md) | Eliminates AI detection signals from text — statistical, structural, and alignment artifacts |
 | [strategic-persuasion](skills/strategic-persuasion/SKILL.md) | Cognitive rhetoric and audience-targeted persuasive content construction |
@@ -64,11 +66,15 @@ Skills/
 └── skills/                            # Skill directories
     ├── backlog-manager/
     │   └── SKILL.md
+    ├── citation-discipline/
+    │   └── SKILL.md
     ├── research/
     │   └── SKILL.md
     ├── strategy-author/
     │   └── SKILL.md
     ├── remove-ai-slop/
+    │   └── SKILL.md
+    ├── speculation-control/
     │   └── SKILL.md
     └── strategic-persuasion/
         └── SKILL.md
