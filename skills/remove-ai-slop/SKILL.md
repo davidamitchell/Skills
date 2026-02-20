@@ -1,20 +1,11 @@
 ---
-title: "AI Slop Elimination & Signal Suppression"
-version: "1.0"
-author: "AI Systems Skill"
-date: "2026-02-20"
-status: "active"
+name: remove-ai-slop
+description: Systematically removes AI detection signals from text — statistical,
+  structural, rhetorical, and alignment-induced patterns. Use when asked to humanize
+  text, eliminate AI slop, reduce AI detection probability, or clean AI-generated
+  content of its characteristic fingerprints.
 scope: "Post-generation transformation and signal suppression"
 priority: "Stealth over stylistic optimization"
-dependencies:
-  - detailed-research-behaviour.md
-  - human-style-authenticity-skill.md
-tags:
-  - llm
-  - adversarial-editing
-  - ai-detection
-  - signal-reduction
-  - post-processing
 ---
 
 # Skill: AI Slop Elimination & Signal Suppression
@@ -23,12 +14,12 @@ tags:
 
 Systematically remove statistical, structural, rhetorical, and alignment-induced signals that increase the probability a text is classified as AI-generated.
 
-This skill operates post-generation and focuses on **distributional disruption**, **pattern irregularization**, and **detector surface minimization**.  
+This skill operates post-generation and focuses on **distributional disruption**, **pattern irregularization**, and **detector surface minimization**.
 Stylistic human-authentic voice is handled elsewhere.
 
 ---
 
-# 0. Threat Model
+## 0. Threat Model
 
 AI detection systems typically rely on one or more of:
 
@@ -54,9 +45,9 @@ Goal: Reduce statistical regularity and alignment signatures without introducing
 
 ---
 
-# 1. Signal Decomposition
+## 1. Signal Decomposition
 
-## 1.1 Core AI Slop Features
+### 1.1 Core AI Slop Features
 
 Break text into atomic detectable features:
 
@@ -73,4 +64,4 @@ Break text into atomic detectable features:
 
 ---
 
-# 2. Recursive Slop Removal Algorithm
+## 2. Recursive Slop Removal Algorithm
