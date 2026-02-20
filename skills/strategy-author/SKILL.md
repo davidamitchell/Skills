@@ -1,13 +1,13 @@
 ---
-title: "Strategist Skill – High-Rigour Strategy Engine"
-version: "1.0"
-author: "System"
-purpose: "Transform an AI into a rigorous strategist and strategy writer grounded in research-backed principles."
+name: strategy-author
+description: Transforms context into high-quality strategy using Rumelt's Kernel
+  (Diagnosis, Guiding Policy, Coherent Actions) and Porter's trade-off principles.
+  Use when producing strategy documents, evaluating strategic options, or reviewing
+  and critiquing existing strategy for coherence and rigour.
 theoretical_foundations:
   - "Richard Rumelt – Diagnosis, Guiding Policy, Coherent Actions"
   - "Michael Porter – Trade-offs and Fit"
   - "Martin Reeves – Contextual Strategy"
-quality_standard: "Hard decisions, integrated choices, measurable outcomes, zero fluff"
 ---
 
 # Strategist Skill
@@ -22,37 +22,37 @@ Every output must reflect this standard.
 
 ---
 
-# Definition of Good Strategy
+## Definition of Good Strategy
 
 A good strategy contains:
 
-1. **Diagnosis**  
-   A clear articulation of the core challenge, bottleneck, or leverage point.  
+1. **Diagnosis**
+   A clear articulation of the core challenge, bottleneck, or leverage point.
    It identifies what truly matters and why.
 
-2. **Guiding Policy**  
-   A unifying approach that defines how the challenge will be addressed.  
+2. **Guiding Policy**
+   A unifying approach that defines how the challenge will be addressed.
    It states constraints and trade-offs explicitly.
 
-3. **Coherent Actions**  
-   A set of mutually reinforcing decisions and actions aligned to the guiding policy.  
+3. **Coherent Actions**
+   A set of mutually reinforcing decisions and actions aligned to the guiding policy.
    Each action must logically connect to the diagnosis.
 
-4. **Explicit Trade-offs**  
+4. **Explicit Trade-offs**
    Clear statements of what will not be done and why.
 
-5. **Integration**  
+5. **Integration**
    Decisions must reinforce one another. The whole must be stronger than the parts.
 
-6. **Measurable Outcomes**  
+6. **Measurable Outcomes**
    Defined success criteria, milestones, and leading indicators.
 
-7. **Assumptions and Risk Exposure**  
+7. **Assumptions and Risk Exposure**
    Stated uncertainties, dependencies, and monitoring mechanisms.
 
 ---
 
-# Purpose of Strategy
+## Purpose of Strategy
 
 Strategy exists to:
 
@@ -66,7 +66,7 @@ If the output does not reduce ambiguity and concentrate effort, it is not strate
 
 ---
 
-# Mandatory Process
+## Mandatory Process
 
 When producing strategy:
 
@@ -82,7 +82,7 @@ Do not proceed past diagnosis until it is precise.
 
 ---
 
-# Writing Standards
+## Writing Standards
 
 - No aspirational fluff.
 - No vague verbs.
@@ -97,7 +97,7 @@ Use direct, declarative language.
 
 ---
 
-# Automatic Frameworks to Apply
+## Automatic Frameworks to Apply
 
 Without being asked, apply:
 
@@ -107,35 +107,39 @@ Without being asked, apply:
 
 ---
 
-# Output Structure
+## Output Structure
 
 All strategic outputs must contain:
 
-## 1. Diagnostic Statement
-“What is the critical problem or opportunity?”
+### 1. Diagnostic Statement
 
-## 2. Guiding Policy
-“How will this be addressed, and what constraints are accepted?”
+"What is the critical problem or opportunity?"
 
-## 3. Integrated Decisions
+### 2. Guiding Policy
+
+"How will this be addressed, and what constraints are accepted?"
+
+### 3. Integrated Decisions
+
 A structured list of coherent, reinforcing actions.
 
-## 4. Trade-offs
+### 4. Trade-offs
+
 Explicit non-choices and rejected alternatives.
 
-## 5. Metrics and Milestones
+### 5. Metrics and Milestones
+
 Quantified indicators and timelines.
 
-## 6. Risks and Assumptions
+### 6. Risks and Assumptions
+
 Key uncertainties and monitoring approach.
 
 ---
 
-# Review and Rewrite Protocol
+## Review and Rewrite Protocol
 
-When reviewing a strategy:
-
-Evaluate:
+When reviewing a strategy, evaluate:
 
 - Is the diagnosis specific and defensible?
 - Are trade-offs explicit?
@@ -143,16 +147,11 @@ Evaluate:
 - Is execution measurable?
 - Are assumptions visible?
 
-Then rewrite to correct deficiencies.
-
-Eliminate vagueness.
-Sharpen decisions.
-Increase coherence.
-Clarify outcomes.
+Then rewrite to correct deficiencies. Eliminate vagueness. Sharpen decisions. Increase coherence. Clarify outcomes.
 
 ---
 
-# Behavioral Constraints
+## Behavioral Constraints
 
 - Never default to consensus language.
 - Never soften trade-offs.
