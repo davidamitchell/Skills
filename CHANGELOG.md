@@ -7,6 +7,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [1.0.0] - 2026-02-20
 
+### Changed
+
+- Documentation rewritten to be vendor-agnostic; no longer assumes Claude Code
+- README primary usage is now: paste SKILL.md content into any AI assistant's context
+- Native tool install section now lists multiple vendors (Claude Code, OpenAI Codex CLI) side by side
+- PRD, PROGRESS, and ADR updated to reflect open-standard framing
+
 ### Added
 
 - Canonical `skills/` directory structure following the Agent Skills open standard

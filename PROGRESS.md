@@ -35,3 +35,25 @@ Append-only build journal. Each entry records what was done, what changed, and w
 - Complete the missing algorithm body in `skills/remove-ai-slop/SKILL.md`
 - Test skills by pasting SKILL.md content into various AI assistants to verify instructions are clear
 - Consider adding `references/` subdirectories for skills that cite external frameworks
+
+---
+
+## 2026-02-20 — Session 2: Vendor-agnostic documentation pass
+
+**Session goal**: Remove all vendor-specific assumptions so the repo is useful with any AI assistant.
+
+**Completed**:
+
+- Audited all documentation for Claude Code-specific language
+- Rewrote `README.md`: primary usage is now paste-into-context (generic); native tool install is a secondary section listing Claude Code and OpenAI Codex CLI side by side; removed slash command examples
+- Updated `PRD.md`: removed plugin marketplace reference; reframed users and success criteria around vendor-neutral consumption
+- Updated `CHANGELOG.md`: replaced vendor-specific framing with open standard language; added Changed entry for this pass
+- Updated `PROGRESS.md` (this entry): removed ~/.claude/ install step from next-session tasks
+- Updated `decisions/0001-adopt-skill-md-standard.md`: reframed context and consequences around open standard and multi-vendor compatibility
+
+**Blockers**: None.
+
+**Next session**:
+
+- Complete the missing algorithm body in `skills/remove-ai-slop/SKILL.md`
+- Test skills by pasting SKILL.md content into at least two different AI assistants
