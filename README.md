@@ -9,13 +9,13 @@ a specific task to a high standard. Skills are format-compatible with the
 
 | Skill | Description |
 |---|---|
-| [backlog-manager](skills/backlog-manager/SKILL.md) | Command-driven outcome-focused backlog in a single file; add, refine, and track work items by observable result |
-| [citation-discipline](skills/citation-discipline/SKILL.md) | Binds every factual claim to a verifiable source at the point of assertion; enforces citation placement, source quality, and precision |
-| [research](skills/research/SKILL.md) | Rigorous, evidence-driven research using recursive decomposition and verification loops |
-| [speculation-control](skills/speculation-control/SKILL.md) | Enforces strict separation between evidence-based statements and speculative, interpretive, or subjective content |
-| [strategy-author](skills/strategy-author/SKILL.md) | High-rigour strategy documents grounded in Rumelt and Porter frameworks |
-| [remove-ai-slop](skills/remove-ai-slop/SKILL.md) | Eliminates AI detection signals from text — statistical, structural, and alignment artifacts |
-| [strategic-persuasion](skills/strategic-persuasion/SKILL.md) | Cognitive rhetoric and audience-targeted persuasive content construction |
+| [backlog-manager](backlog-manager/SKILL.md) | Command-driven outcome-focused backlog in a single file; add, refine, and track work items by observable result |
+| [citation-discipline](citation-discipline/SKILL.md) | Binds every factual claim to a verifiable source at the point of assertion; enforces citation placement, source quality, and precision |
+| [research](research/SKILL.md) | Rigorous, evidence-driven research using recursive decomposition and verification loops |
+| [speculation-control](speculation-control/SKILL.md) | Enforces strict separation between evidence-based statements and speculative, interpretive, or subjective content |
+| [strategy-author](strategy-author/SKILL.md) | High-rigour strategy documents grounded in Rumelt and Porter frameworks |
+| [remove-ai-slop](remove-ai-slop/SKILL.md) | Eliminates AI detection signals from text — statistical, structural, and alignment artifacts |
+| [strategic-persuasion](strategic-persuasion/SKILL.md) | Cognitive rhetoric and audience-targeted persuasive content construction |
 
 ## Using a skill
 
@@ -27,7 +27,7 @@ Copy the contents of a `SKILL.md` into your conversation as a system prompt or
 prepend it to your message:
 
 ```
-[paste contents of skills/research/SKILL.md]
+[paste contents of research/SKILL.md]
 
 Now research: What are the second-order effects of LLM proliferation on knowledge work?
 ```
@@ -47,7 +47,7 @@ directory into your tool's configured skills location:
 
 Example:
 ```bash
-cp -r skills/research ~/.claude/skills/research
+cp -r research ~/.claude/skills/research
 ```
 
 Once installed, invoke by name or let the tool trigger the skill automatically
@@ -63,26 +63,25 @@ Skills/
 ├── PROGRESS.md                        # Session-by-session build journal
 ├── decisions/                         # Architecture Decision Records
 │   └── 0001-adopt-skill-md-standard.md
-└── skills/                            # Skill directories
-    ├── backlog-manager/
-    │   └── SKILL.md
-    ├── citation-discipline/
-    │   └── SKILL.md
-    ├── research/
-    │   └── SKILL.md
-    ├── strategy-author/
-    │   └── SKILL.md
-    ├── remove-ai-slop/
-    │   └── SKILL.md
-    ├── speculation-control/
-    │   └── SKILL.md
-    └── strategic-persuasion/
-        └── SKILL.md
+├── backlog-manager/
+│   └── SKILL.md
+├── citation-discipline/
+│   └── SKILL.md
+├── research/
+│   └── SKILL.md
+├── strategy-author/
+│   └── SKILL.md
+├── remove-ai-slop/
+│   └── SKILL.md
+├── speculation-control/
+│   └── SKILL.md
+└── strategic-persuasion/
+    └── SKILL.md
 ```
 
 ## Creating a new skill
 
-1. Create a directory: `mkdir skills/my-skill`
+1. Create a directory: `mkdir my-skill`
 2. Create `SKILL.md` with YAML frontmatter and a markdown body:
 
 ```yaml
@@ -101,5 +100,5 @@ See the [Agent Skills open standard](https://agentskills.io) for the full specif
 
 ## Contributing
 
-Add new skills to `skills/`, following the SKILL.md format. Update this README's
+Add new skills to the root of the repo, following the SKILL.md format. Update this README's
 index table and add a CHANGELOG entry.
