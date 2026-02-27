@@ -11,6 +11,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - `skills/citation-discipline/SKILL.md` — claim–source binding and citation placement discipline skill
 - `skills/speculation-control/SKILL.md` — epistemic discipline and non-factual content labeling skill
 
+### Changed
+
+- All SKILL.md files: added `version: "1.0"` frontmatter field for consistency
+- All SKILL.md files: added `## When Not to Use` section to each skill for operational clarity
+- All SKILL.md files: added `## Interaction Protocol` section defining clarifying questions and output style
+- All SKILL.md files: added `## Inputs and Outputs` section defining composable interfaces
+- `skills/remove-ai-slop/SKILL.md`: replaced non-standard frontmatter with canonical `name` and `description` fields; reframed purpose from AI-detection evasion to writing quality improvement; removed adversarial framing and watermark-circumvention section; set version to `1.0`
+- `skills/strategic-persuasion/SKILL.md`: reframed manipulative language to ethical persuasion framing; added `## Ethical Use` section defining boundaries; set version to `1.0`
+
 ## [1.0.0] - 2026-02-20
 
 ### Changed

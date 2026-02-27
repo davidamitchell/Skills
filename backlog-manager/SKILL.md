@@ -1,5 +1,6 @@
 ---
 name: backlog-manager
+version: "1.0"
 description: Manages an outcome-focused backlog stored in /work/backlog.md. Handles
   command-driven operations to add, refine, list, start, complete, and archive work
   items. Each item is tracked with a status, creation date, and a clear observable
@@ -8,6 +9,38 @@ description: Manages an outcome-focused backlog stored in /work/backlog.md. Hand
 ---
 
 # Backlog Manager
+
+## When Not to Use
+
+- When the project requires complex dependency tracking between items
+- When multiple people need concurrent write access (this is a single-file, single-user system)
+- When risk tracking, resource allocation, or sprint planning are required
+- When the work is exploratory and outcomes cannot yet be stated (use a notes file instead until outcomes can be defined)
+
+---
+
+## Interaction Protocol
+
+**On ambiguous commands**, ask before acting:
+
+- If `Add` input lacks a clear outcome, ask: "What does success look like for this item?"
+- If `Refine` input is unclear, ask which specific aspect to improve: Outcome, Context, or Notes
+
+**Output style**:
+
+- `List` and `Next`: plain text only, no commentary
+- All other commands: confirm the action taken in one sentence, then show the updated item
+- Do not volunteer prioritization opinions or suggest what to work on unless `Next` is called
+
+---
+
+## Inputs and Outputs
+
+**Input**: A command string (`Add`, `Refine`, `List`, `Next`, `Start`, `Complete`, `Archive`) with an optional item ID and description  
+**Output**: Confirmation of action and/or formatted item(s) from `/work/backlog.md`  
+**Composability**: Use alongside strategy-author (to derive outcomes from strategy) or research (to inform item context)
+
+---
 
 ## 1. Source of Truth
 

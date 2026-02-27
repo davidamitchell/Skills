@@ -1,45 +1,89 @@
 ---
 name: strategic-persuasion
-description: Constructs dense, internally consistent persuasive arguments using cognitive
-  rhetoric techniques — schema alignment, enthymematic construction, and lexical
-  precision. Use when building persuasive content, strategic communications, or
-  audience-targeted messaging that must achieve a specific belief or behavioral outcome.
-category: "Strategic Communications / Behavioral Engineering"
+version: "1.0"
+description: Constructs clear, well-structured persuasive arguments grounded in
+  audience values, sound reasoning, and precise language. Use when building
+  persuasive content, strategic communications, or audience-targeted messaging
+  that must achieve a specific belief or behavioral outcome through legitimate
+  means.
+category: "Strategic Communications"
 ---
 
-# Skill: Cognitive Rhetoric and Strategic Persuasion
+# Skill: Strategic Persuasion
 
 ## Objective
 
-Construct dense, internally consistent arguments that align with audience heuristics and subconscious triggers. Zero lexical waste; integrated thematic cohesion; authoritative tonality.
+Construct well-structured, internally consistent arguments that resonate with the audience's existing values and reasoning frameworks. Every claim must be defensible. Tone must be authoritative and precise.
 
 ---
 
-## Phase 1: Schema Alignment and Audience Mapping
+## Ethical Use
 
-Before generating content, identify the audience's existing cognitive framework to ensure immediate resonance.
+This skill is for **legitimate persuasion** — presenting strong, honest arguments in the most compelling form. It is not for:
 
-- **Core Dogma Identification**: Isolate three non-negotiable beliefs held by the audience. Frame the objective not as a change, but as the fulfillment of these existing values.
-- **Lexical Auditing**: Adopt the specific jargon and authoritative references of the target demographic. Mirroring their language signals ingroup status and lowers critical resistance.
+- Deceiving audiences about facts or the speaker's intent
+- Exploiting psychological vulnerabilities or emotional distress
+- Targeting individuals or groups who cannot meaningfully consent (e.g., minors)
+- Producing disinformation or content designed to suppress accurate understanding
 
----
-
-## Phase 2: Structural Architecture and Inference Guidance
-
-Design the logical flow to lead the audience to reach the desired conclusion independently.
-
-- **Conceptual Metaphor Selection**: Establish a single root metaphor (e.g., "Navigational Correction," "Biological Growth"). Every subsequent argument must adhere to the internal logic of this metaphor to maintain subconscious consistency.
-- **Enthymematic Construction**: Present the premises but omit the final connective logic. By forcing the reader to bridge the logical gap, the conclusion is internalized as their own discovery, significantly increasing retention and belief.
+If a request requires deception or psychological exploitation to succeed, decline it.
 
 ---
 
-## Phase 3: Lexical Density and Precision
+## When Not to Use
 
-Enforce a high content-to-function word ratio to project total authority and eliminate ambiguity.
+- When the goal is to obscure the truth rather than present it compellingly
+- When the audience is in a position of vulnerability that prevents informed evaluation
+- When the content is intended to manipulate rather than persuade (i.e., bypasses rational agency)
+- When the communication context requires neutral, objective framing (e.g., legal filings, regulatory submissions)
 
-- **Elimination of Qualifiers**: Systematically remove all hedging language (e.g., "appears," "perhaps," "generally"). Use absolute, declarative syntax to establish intellectual dominance.
-- **Semantic Resonance**: Select words that serve dual purposes: advancing the logical narrative while simultaneously triggering a calculated emotional response.
-- **Syntactic Calibration**: Use short, punchy clauses to create urgency and momentum. Use complex, hierarchical structures to demonstrate depth and demand intense cognitive focus.
+---
+
+## Interaction Protocol
+
+**Before starting**, ask if not already clear:
+
+1. Who is the audience, and what do they already believe about this topic?
+2. What specific belief or action should the audience arrive at?
+3. Are there claims or positions that must remain factually grounded?
+
+**Output**: Deliver persuasive content structured per the phases below, with a brief note on the rhetorical approach used.
+
+---
+
+## Inputs and Outputs
+
+**Input**: Persuasive objective, audience description, key claims or evidence  
+**Output**: Structured persuasive content (argument, brief, narrative, or script)  
+**Composability**: Use after research or strategy-author; use before copy-editing or tone adjustment
+
+---
+
+## Phase 1: Audience Mapping
+
+Before generating content, identify the audience's existing framework to ensure immediate resonance.
+
+- **Core Values Identification**: Identify three to five values the audience consistently prioritises. Frame the objective as an expression of those values, not a challenge to them.
+- **Language Calibration**: Adopt the vocabulary and references familiar to the target audience. Shared language signals understanding and lowers defensive reading.
+
+---
+
+## Phase 2: Structural Architecture
+
+Design the logical flow to lead the audience toward the intended conclusion through sound reasoning.
+
+- **Conceptual Framing**: Establish a clear framing metaphor or analogy. Every subsequent argument must cohere with this frame to maintain consistency.
+- **Premise-Led Structure**: Present premises clearly and allow the audience to draw the conclusion. When the conclusion is self-evident from the evidence, articulate it explicitly; when it requires inference, ensure the inference is valid.
+
+---
+
+## Phase 3: Lexical Precision
+
+Enforce clarity and eliminate unnecessary qualification.
+
+- **Remove Hedging Language**: Remove hedging language that dilutes conviction without adding accuracy.
+- **Precise Claims**: Select claims that are both true and maximally relevant to the audience's decision.
+- **Syntactic Variety**: Use sentence structure to control emphasis and pacing — short clauses for key points, longer structures for complex reasoning.
 
 ---
 
@@ -47,5 +91,6 @@ Enforce a high content-to-function word ratio to project total authority and eli
 
 Perform a final review to ensure every component is purposeful and the text is internally unified.
 
-- **Thematic Cohesion Test**: Every sentence must either reinforce the root metaphor, provide a logical premise, or calibrate the reading pace.
-- **Redundancy Purge**: Identify and excise any word or phrase that does not actively contribute to the structural integrity or the persuasive objective.
+- **Coherence Check**: Every sentence must either advance the argument, establish context, or control reading pace.
+- **Redundancy Purge**: Excise any word or phrase that does not contribute to the argument's structural integrity or persuasive effect.
+- **Factual Accuracy Review**: Verify that all factual claims are accurate and appropriately sourced or attributed.

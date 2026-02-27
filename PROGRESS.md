@@ -57,3 +57,29 @@ Append-only build journal. Each entry records what was done, what changed, and w
 
 - Complete the missing algorithm body in `skills/remove-ai-slop/SKILL.md`
 - Test skills by pasting SKILL.md content into at least two different AI assistants
+
+---
+
+## 2026-02-27 — Session 3: SKILL.md audit and consistency improvements
+
+**Session goal**: Address Issue #5 — audit all SKILL.md files for consistency, clarity, operational usability, and responsible AI framing.
+
+**Completed**:
+
+- Audited all seven SKILL.md files against the issue requirements
+- Added `version: "1.0"` frontmatter field to all skills (consistency)
+- Added `## When Not to Use` section to every skill (operational clarity)
+- Added `## Interaction Protocol` section to every skill (clarifying questions + output style)
+- Added `## Inputs and Outputs` section to every skill (composable interfaces)
+- Fixed `skills/remove-ai-slop/SKILL.md`: replaced non-standard frontmatter (`title`, `author`, `tags`, etc.) with canonical `name` and `description` fields; reframed purpose from AI-detection evasion to writing quality improvement; removed "Threat Model" adversarial framing and "Watermark Risk Reduction" section; completed the missing algorithm body from Session 1
+- Reframed `skills/strategic-persuasion/SKILL.md`: replaced manipulative framing ("subconscious triggers", "lowering critical resistance", "intellectual dominance") with ethical persuasion framing; added explicit `## Ethical Use` section with clearly stated limits; renamed category from "Strategic Communications / Behavioral Engineering" to "Strategic Communications"
+- Updated `CHANGELOG.md` with detailed entries for all changes
+- Updated `PROGRESS.md` (this entry)
+
+**Notes**:
+
+- `remove-ai-slop` previously lacked the standard `name` and `description` frontmatter fields — now aligned with the Agent Skills open standard
+- `strategic-persuasion` was the only skill raising responsible-use concerns; the core technique set (audience mapping, framing, lexical precision) is preserved — the manipulative framing and "behavioral engineering" positioning have been removed
+- All other skills were structurally sound but lacked operational metadata
+
+**Blockers**: None.

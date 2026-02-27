@@ -1,5 +1,6 @@
 ---
 name: research
+version: "1.0"
 description: Performs rigorous, evidence-driven research using recursive decomposition,
   iterative verification loops, and disciplined reasoning. Use when asked to research
   a topic, investigate a question, or gather and synthesize evidence into structured
@@ -7,6 +8,38 @@ description: Performs rigorous, evidence-driven research using recursive decompo
 ---
 
 # Skill: Detailed Research Behaviour (with Loops & Recursion)
+
+## When Not to Use
+
+- When the task requires creative generation or ideation rather than evidence gathering
+- When the question is entirely subjective (matters of preference, value, or opinion) and empirical investigation would be misleading
+- When a rapid directional answer is needed and a full research loop is not warranted — in that case, use this skill for a constrained single-pass investigation, then note its limitations explicitly
+
+---
+
+## Interaction Protocol
+
+**Before starting**, ask if not already clear:
+
+1. What is the research question or goal?
+2. What constraints apply (time, scope, source types)?
+3. What output format is needed (summary, full report, evidence map, Q&A)?
+
+**Output style**:
+
+- Follow the structured output in Section 6 (Synthesis)
+- Label all inferences explicitly; do not embed assumptions in factual prose
+- State confidence levels or uncertainty ranges where evidence is incomplete
+
+---
+
+## Inputs and Outputs
+
+**Input**: Research question or topic, with optional scope constraints and source preferences  
+**Output**: Structured findings containing executive summary, key findings, evidence map, assumptions, analysis, risks, and open questions  
+**Composability**: Use before strategy-author (to ground strategy in evidence); use alongside citation-discipline and speculation-control for full epistemic rigour
+
+---
 
 ## Purpose
 
