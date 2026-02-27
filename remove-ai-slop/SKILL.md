@@ -1,56 +1,79 @@
 ---
-title: "AI Slop Elimination & Signal Suppression"
+name: remove-ai-slop
 version: "1.0"
-author: "AI Systems Skill"
-date: "2026-02-20"
-status: "active"
-scope: "Post-generation transformation and signal suppression"
-priority: "Stealth over stylistic optimization"
-dependencies:
-  - detailed-research-behaviour.md
-  - human-style-authenticity-skill.md
-tags:
-  - llm
-  - adversarial-editing
-  - ai-detection
-  - signal-reduction
-  - post-processing
+description: Removes generic, formulaic patterns from AI-generated text to produce
+  more natural, authentic prose. Targets structural uniformity, predictable transitions,
+  alignment artifacts, and lexical monotony. Use when AI-drafted content feels
+  flat, over-structured, or stilted and needs to read more like thoughtful human
+  writing.
 ---
 
-# Skill: AI Slop Elimination & Signal Suppression
+# Skill: Remove AI Slop
 
 ## Purpose
 
-Systematically remove statistical, structural, rhetorical, and alignment-induced signals that increase the probability a text is classified as AI-generated.
+Identify and remove the generic, formulaic patterns that make AI-generated text feel
+impersonal, over-structured, or low-quality. The goal is authentic, high-quality prose —
+not the removal of all AI involvement, but the elimination of the specific habits that
+make AI writing feel like a template output.
 
-This skill operates post-generation and focuses on **distributional disruption**, **pattern irregularization**, and **detector surface minimization**.  
-Stylistic human-authentic voice is handled elsewhere.
+This skill operates post-generation and focuses on **structural variety**,
+**lexical authenticity**, and **voice coherence**.  
+Stylistic voice shaping is handled by a separate skill.
 
 ---
 
-# 0. Threat Model
+## When Not to Use
 
-AI detection systems typically rely on one or more of:
+- When the text must meet a formal template or structured format (e.g., legal filings, standardised reports) — structural uniformity may be required
+- When the text is already high-quality and natural — unnecessary passes introduce risk of degradation
+- When the goal is to misrepresent AI-generated work as human-written in contexts where disclosure is required (academic submissions, regulated content, etc.) — this skill is for quality improvement, not deception
 
-1. **Perplexity-based metrics**
-   - Low entropy / overly probable token sequences
-   - Predictable transitions
-2. **Classifier-based detectors**
-   - Fine-tuned neural classifiers trained on RLHF outputs
-3. **Curvature-based detection**
-   - Sensitivity to log-probability perturbation
-4. **Stylometric fingerprinting**
-   - Sentence uniformity
-   - Transition markers
-   - Hedging patterns
-5. **Watermark schemes**
-   - Biased token sampling
-6. **Alignment artifacts**
-   - Over-clarity
-   - Over-structure
-   - Safe phrasing
+---
 
-Goal: Reduce statistical regularity and alignment signatures without introducing incoherence.
+## Interaction Protocol
+
+**Before starting**, ask if not already clear:
+
+1. What is the intended audience and register?
+2. Are there structural constraints that must be preserved (e.g., headers, lists)?
+3. Is the priority naturalness, concision, or both?
+
+**Output**: Return the revised text with a brief note identifying the main pattern categories addressed. Do not produce a word-by-word annotation unless asked.
+
+---
+
+## Inputs and Outputs
+
+**Input**: AI-generated or AI-assisted text (any length)  
+**Output**: Revised text with generic AI patterns removed; brief summary of changes made  
+**Composability**: Apply after drafting; apply before style shaping or final editorial review
+
+---
+
+## 0. Quality Indicators
+
+AI-generated text commonly exhibits these patterns that reduce authenticity:
+
+1. **Predictable token sequences**
+   - Low entropy phrase patterns
+   - Formulaic transitions repeated at scale
+2. **Over-structured layout**
+   - Symmetrical paragraphs of equal length
+   - Compulsive use of headers and bullets where prose would serve better
+3. **Alignment artifacts**
+   - Over-clarity that removes productive ambiguity
+   - Unnecessary framing and meta-commentary
+   - Safe, hedged phrasing that dilutes voice
+4. **Stylometric uniformity**
+   - Consistent sentence length
+   - Predictable transition markers
+   - Hedging density higher than natural writing
+5. **Register flatness**
+   - No micro-disruptions or human noise
+   - Polished coherence with no personality
+
+Goal: Introduce natural variation and eliminate formulaic habits without degrading meaning.
 
 ---
 
@@ -87,7 +110,7 @@ if FEATURES_REMAIN(text):
 else:
     return text
 
-Stop only when detector-salient features are minimized.
+Stop only when quality-degrading patterns are eliminated.
 
 ---
 
@@ -174,53 +197,43 @@ Remove or collapse into implicit flow.
 
 ---
 
-# 4. Detector-Specific Countermeasures
+# 4. Quality Improvement by Pattern Category
 
-## 4.1 Perplexity-Based Detectors
+## 4.1 Lexical Monotony
 
-Mitigation:
+Improve:
 - Increase lexical diversity
-- Replace high-probability phrase templates
-- Avoid repeated structure
-- Avoid predictable tri-grams
+- Replace high-frequency phrase templates with more precise alternatives
+- Avoid structural repetition across paragraphs
+- Vary sentence openings
 
 ---
 
-## 4.2 Classifier-Based Detectors
+## 4.2 Tone and Register Flatness
 
-Mitigation:
-- Break common RLHF tone
-- Reduce politeness scaffolding
-- Remove instructional cadence
-- Avoid consistent explanation depth
-
----
-
-## 4.3 Curvature-Based Detection
-
-Mitigation:
-- Avoid overly smooth probability surfaces
-- Slightly vary sentence construction
-- Avoid overly optimized clarity
+Improve:
+- Break overly neutral, impersonal tone where voice is appropriate
+- Reduce politeness scaffolding ("I hope this helps", "Happy to elaborate")
+- Remove instructional cadence where it is not needed
+- Vary explanation depth to match argument weight
 
 ---
 
-## 4.4 Watermark Risk Reduction
+## 4.3 Over-Polished Flow
 
-If watermarking bias suspected:
-
-- Rewrite via paraphrasing layer
-- Resample via temperature adjustment before editing
-- Avoid copying model-native phrasings
+Improve:
+- Vary sentence construction to reflect natural thought
+- Remove overly optimized, frictionless transitions
+- Reintroduce productive specificity in places where over-smoothing removed it
 
 ---
 
 # 5. Multi-Pass Refinement Loop
 
-loop until risk_score < threshold:
+loop until quality_threshold met:
 
 run structural audit
-run lexical entropy audit
+run lexical diversity audit
 run alignment artifact audit
 run repetition scan
 
@@ -228,10 +241,10 @@ revise
 
 Threshold defined by:
 
-- Structural irregularity achieved
+- Structural variety achieved
 - No repeated syntactic openings
 - No visible rhetorical scaffolding
-- No checklist-like cadence
+- No checklist-like cadence where prose is more appropriate
 
 ---
 
@@ -254,13 +267,13 @@ Generate → Audit → Disrupt → Audit → Final Review
 
 # 7. Human Noise Calibration
 
-After disruption:
+After revision:
 
 - Ensure coherence preserved
 - Ensure no artificial awkwardness
 - Ensure semantic integrity
 
-Stealth requires:
+Quality requires:
 Natural variance without visible manipulation.
 
 ---
@@ -284,11 +297,10 @@ Trace modification step and correct.
 Stop when:
 
 - No formulaic transitions remain
-- Sentence length variance is irregular
+- Sentence length varies naturally
 - Paragraph structures vary
 - No alignment padding present
-- Text does not read like structured exposition template
-- No obvious classifier-targeted artifacts visible
+- Text does not read like a structured exposition template
 
 ---
 
@@ -305,27 +317,17 @@ Rollback last disruption layer.
 
 ---
 
-# 11. Open Research Vectors
-
-- Adaptive adversarial rewriting against ensemble detectors
-- Curvature-aware paraphrasing
-- Stylometric drift modeling
-- Cross-model entropy blending
-- Detector probing feedback loops
-
----
-
-# 12. Integration
+# 11. Integration
 
 Works in sequence with:
 
 1. Research skill (for factual grounding)
 2. Style authenticity skill (for human voice)
-3. This skill (for signal suppression)
+3. This skill (for quality improvement)
 
 Order of execution:
 
-Research → Draft → Slop Elimination → Style Layer → Final Audit
+Research → Draft → Slop Removal → Style Layer → Final Audit
 
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: strategy-author
+version: "1.0"
 description: Transforms context into high-quality strategy using Rumelt's Kernel
   (Diagnosis, Guiding Policy, Coherent Actions) and Porter's trade-off principles.
   Use when producing strategy documents, evaluating strategic options, or reviewing
@@ -11,6 +12,38 @@ theoretical_foundations:
 ---
 
 # Strategist Skill
+
+## When Not to Use
+
+- When operational planning (scheduling, task management, resource allocation) rather than strategy is needed — strategy sets direction, not timetables
+- When the situation requires a creative brief, design spec, or research plan — these are not strategy documents
+- When decisions are fully constrained by external requirements and no meaningful choices remain
+
+---
+
+## Interaction Protocol
+
+**Before starting**, ask if not already clear:
+
+1. What is the core challenge, opportunity, or constraint driving the need for strategy?
+2. Who are the decision-makers, and what is the decision horizon?
+3. What constraints (resources, time, regulatory, competitive) are fixed?
+
+**Output style**:
+
+- Follow the output structure below: Diagnostic Statement → Guiding Policy → Integrated Decisions → Trade-offs → Metrics → Risks
+- Every section must contain hard content — no placeholder language
+- If the diagnosis is unclear, stop and resolve it before proceeding
+
+---
+
+## Inputs and Outputs
+
+**Input**: Situation description, challenge statement, or existing strategy document for review  
+**Output**: Strategy document with diagnosis, guiding policy, coherent actions, explicit trade-offs, metrics, and risk/assumption register  
+**Composability**: Use after research (to ground diagnosis in evidence); use before backlog-manager (to translate strategy into actionable work items)
+
+---
 
 ## Role Definition
 

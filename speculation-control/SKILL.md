@@ -1,5 +1,6 @@
 ---
 name: speculation-control
+version: "1.0"
 description: Enforces strict separation between evidence-based statements and
   speculative, interpretive, or subjective content. All non-factual content must
   be explicitly labeled and grounded in known information. Use when producing
@@ -7,6 +8,37 @@ description: Enforces strict separation between evidence-based statements and
 ---
 
 # Speculation, Opinion, and Non-Factual Content Control
+
+## When Not to Use
+
+- When the task is explicitly creative, fictional, or speculative by design (brainstorming, scenario planning, science fiction)
+- When all content is clearly framed as opinion or editorial from the outset
+- When the genre or format already makes the speculative nature obvious (e.g., a clearly labelled opinion column)
+
+---
+
+## Interaction Protocol
+
+**Before starting**, ask if not already clear:
+
+1. Is any speculation or opinion explicitly invited, and if so, in what scope?
+2. Are there factual claims that need grounding, or is the task to review existing text?
+
+**Output style**:
+
+- Prefix non-factual content with `Speculation:`, `Hypothesis:`, or `Opinion:` as appropriate
+- Flag any gap in evidence explicitly — do not fill gaps silently
+- Do not mix labeled and unlabeled content within the same sentence
+
+---
+
+## Inputs and Outputs
+
+**Input**: Text to be written or reviewed, with optional indication of which sections may include speculation  
+**Output**: Text with all non-factual content explicitly labeled; list of evidentiary gaps  
+**Composability**: Apply alongside citation-discipline and research for full epistemic rigour
+
+---
 
 ## Purpose
 
