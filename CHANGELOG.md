@@ -5,26 +5,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-### Added
-
-- `code-review/SKILL.md` — systematic multi-dimensional code review skill covering correctness, security, performance, maintainability, and style
-- `technical-writer/SKILL.md` — technical documentation writing skill covering READMEs, API references, guides, runbooks, and architecture documents
-- `backlog-manager/SKILL.md` — command-driven outcome-focused backlog management skill
-- `citation-discipline/SKILL.md` — claim–source binding and citation placement discipline skill
-- `speculation-control/SKILL.md` — epistemic discipline and non-factual content labeling skill
-
 ### Changed
 
-- `README.md`: added `code-review` and `technical-writer` to the skills index table
-- `README.md`: updated repository structure tree to include the two new skill directories
-- `README.md`: added Related Resources section linking to agentskills.io, anthropics/skills, and two awesome-claude-skills lists
-- `README.md`: expanded "Creating a new skill" section with a skill quality checklist covering frontmatter, required sections, instruction quality, and verification
-- All SKILL.md files: added `version: "1.0"` frontmatter field for consistency
-- All SKILL.md files: added `## When Not to Use` section to each skill for operational clarity
-- All SKILL.md files: added `## Interaction Protocol` section defining clarifying questions and output style
-- All SKILL.md files: added `## Inputs and Outputs` section defining composable interfaces
-- `remove-ai-slop/SKILL.md`: replaced non-standard frontmatter with canonical `name` and `description` fields; reframed purpose from AI-detection evasion to writing quality improvement; removed adversarial framing and watermark-circumvention section; set version to `1.0`
-- `strategic-persuasion/SKILL.md`: reframed manipulative language to ethical persuasion framing; added `## Ethical Use` section defining boundaries; set version to `1.0`
+- `research/SKILL.md`: expanded composability instructions to detail citation-discipline and speculation-control integration points; added Constraint Parameter section (full/bounded/rapid modes with per-mode evidence sufficiency criteria); added Source Prioritisation Heuristic; added Confidence Calibration table (high/medium/low) with per-finding labelling requirement; added Output Calibration section mapping constraint mode to synthesis depth; added Tool Awareness note referencing AGENTS.md § MCP Configuration; updated Section 2 evidence sufficiency criteria to reference the constraint parameter table
+- `strategy-author/SKILL.md`: added Research-to-Diagnosis Translation process (critical constraint extraction, symptom/cause separation, specificity test, evidence anchoring); added Contextual Adaptation section covering government/public sector, NZ SME, and regulated financial services; added required time horizon statement to Metrics and Milestones; added structured trade-offs table format (alternative → rejection reason → re-evaluation signal); added Diagnostic Precision Tests section (falsifiability test and constraint test); added Review Triggers section (time-based and event-based); added "Never diagnose a symptom as the core constraint" to Behavioral Constraints
 
 ## [1.0.0] - 2026-02-20
 
