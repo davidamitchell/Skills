@@ -83,3 +83,34 @@ Append-only build journal. Each entry records what was done, what changed, and w
 - All other skills were structurally sound but lacked operational metadata
 
 **Blockers**: None.
+
+---
+
+## 2026-03-02 — Session 4: Skill gap review and new skill additions
+
+**Session goal**: Address Issue — review existing skills, identify gaps using awesome lists, and add the most valuable missing skills.
+
+**Completed**:
+
+- Reviewed all seven existing SKILL.md files for coverage and gaps
+- Researched awesome lists related to skills: ComposioHQ/awesome-claude-skills, travisvn/awesome-claude-skills, anthropics/skills, agentskills.io, skillsmp.com
+- Identified two high-value gaps not covered by existing skills: code review and technical writing
+- Created `code-review/SKILL.md` — systematic review across correctness, security, performance, maintainability, and style; severity classification (`Critical` to `Info`); structured finding format with location, problem, consequence, and recommendation
+- Created `technical-writer/SKILL.md` — audience-first technical documentation; document type templates (README, guide, API reference, runbook, architecture doc); writing standards for clarity, accuracy, completeness, and concision; review protocol for auditing existing docs
+- Updated `README.md`: added both new skills to the index table; updated the repo structure tree; added Related Resources section linking to agentskills.io, anthropics/skills, and two awesome-claude-skills community lists
+- Updated `CHANGELOG.md`: added entries for this session
+
+**Notes**:
+
+- Both new skills follow the established SKILL.md format: YAML frontmatter with `name`, `version`, and `description`; `When Not to Use`, `Interaction Protocol`, and `Inputs and Outputs` sections
+- The `technical-writer` composability chain references `research`, `citation-discipline`, and `remove-ai-slop` — fitting into the existing skill graph
+- The `code-review` composability chain references `research` (for domain context) and `strategy-author` (for translating findings into decisions)
+- Tooling-specific skills (file formats, browser automation, iOS simulator) were out of scope — they require external dependencies not suited to a portable SKILL.md
+
+**Blockers**: None.
+
+**Next session**:
+
+- Consider a `feedback` skill for structured, constructive critique of written work or decisions
+- Consider a `plain-language` skill for simplifying complex content for non-expert audiences
+- Test new skills by pasting SKILL.md content into an AI assistant with representative prompts
