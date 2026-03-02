@@ -11,11 +11,13 @@ a specific task to a high standard. Skills are format-compatible with the
 |---|---|
 | [backlog-manager](backlog-manager/SKILL.md) | Command-driven outcome-focused backlog in a single file; add, refine, and track work items by observable result |
 | [citation-discipline](citation-discipline/SKILL.md) | Binds every factual claim to a verifiable source at the point of assertion; enforces citation placement, source quality, and precision |
+| [code-review](code-review/SKILL.md) | Systematic multi-dimensional code review covering correctness, security, performance, and maintainability; produces prioritised, actionable findings |
 | [research](research/SKILL.md) | Rigorous, evidence-driven research using recursive decomposition and verification loops |
 | [speculation-control](speculation-control/SKILL.md) | Enforces strict separation between evidence-based statements and speculative, interpretive, or subjective content |
 | [strategy-author](strategy-author/SKILL.md) | High-rigour strategy documents grounded in Rumelt and Porter frameworks |
 | [remove-ai-slop](remove-ai-slop/SKILL.md) | Eliminates AI detection signals from text — statistical, structural, and alignment artifacts |
 | [strategic-persuasion](strategic-persuasion/SKILL.md) | Cognitive rhetoric and audience-targeted persuasive content construction |
+| [technical-writer](technical-writer/SKILL.md) | Clear, accurate technical documentation for developers, operators, or end users; covers READMEs, API references, guides, runbooks, and architecture docs |
 
 ## Using a skill
 
@@ -67,15 +69,19 @@ Skills/
 │   └── SKILL.md
 ├── citation-discipline/
 │   └── SKILL.md
-├── research/
-│   └── SKILL.md
-├── strategy-author/
+├── code-review/
 │   └── SKILL.md
 ├── remove-ai-slop/
 │   └── SKILL.md
+├── research/
+│   └── SKILL.md
 ├── speculation-control/
 │   └── SKILL.md
-└── strategic-persuasion/
+├── strategic-persuasion/
+│   └── SKILL.md
+├── strategy-author/
+│   └── SKILL.md
+└── technical-writer/
     └── SKILL.md
 ```
 
@@ -97,6 +103,17 @@ description: What this skill does and when to use it. Tools that support
 3. Test by pasting the content into any AI assistant with a relevant prompt.
 
 See the [Agent Skills open standard](https://agentskills.io) for the full specification.
+
+## Related resources
+
+Broader collections of skills and prompts that may contain further inspiration:
+
+| Resource | Description |
+|---|---|
+| [agentskills.io](https://agentskills.io) | The Agent Skills open standard this repo follows |
+| [anthropics/skills](https://github.com/anthropics/skills) | Official skills from Anthropic: document processing, design, development, and communication |
+| [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | Curated list of community-built skills with categories for dev tools, data analysis, business, and more |
+| [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) | Curated index of official and community skills with installation instructions |
 
 ## Contributing
 

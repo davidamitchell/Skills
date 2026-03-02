@@ -7,18 +7,23 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
-- `skills/backlog-manager/SKILL.md` — command-driven outcome-focused backlog management skill
-- `skills/citation-discipline/SKILL.md` — claim–source binding and citation placement discipline skill
-- `skills/speculation-control/SKILL.md` — epistemic discipline and non-factual content labeling skill
+- `code-review/SKILL.md` — systematic multi-dimensional code review skill covering correctness, security, performance, maintainability, and style
+- `technical-writer/SKILL.md` — technical documentation writing skill covering READMEs, API references, guides, runbooks, and architecture documents
+- `backlog-manager/SKILL.md` — command-driven outcome-focused backlog management skill
+- `citation-discipline/SKILL.md` — claim–source binding and citation placement discipline skill
+- `speculation-control/SKILL.md` — epistemic discipline and non-factual content labeling skill
 
 ### Changed
 
+- `README.md`: added `code-review` and `technical-writer` to the skills index table
+- `README.md`: updated repository structure tree to include the two new skill directories
+- `README.md`: added Related Resources section linking to agentskills.io, anthropics/skills, and two awesome-claude-skills lists
 - All SKILL.md files: added `version: "1.0"` frontmatter field for consistency
 - All SKILL.md files: added `## When Not to Use` section to each skill for operational clarity
 - All SKILL.md files: added `## Interaction Protocol` section defining clarifying questions and output style
 - All SKILL.md files: added `## Inputs and Outputs` section defining composable interfaces
-- `skills/remove-ai-slop/SKILL.md`: replaced non-standard frontmatter with canonical `name` and `description` fields; reframed purpose from AI-detection evasion to writing quality improvement; removed adversarial framing and watermark-circumvention section; set version to `1.0`
-- `skills/strategic-persuasion/SKILL.md`: reframed manipulative language to ethical persuasion framing; added `## Ethical Use` section defining boundaries; set version to `1.0`
+- `remove-ai-slop/SKILL.md`: replaced non-standard frontmatter with canonical `name` and `description` fields; reframed purpose from AI-detection evasion to writing quality improvement; removed adversarial framing and watermark-circumvention section; set version to `1.0`
+- `strategic-persuasion/SKILL.md`: reframed manipulative language to ethical persuasion framing; added `## Ethical Use` section defining boundaries; set version to `1.0`
 
 ## [1.0.0] - 2026-02-20
 
