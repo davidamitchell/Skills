@@ -18,6 +18,7 @@ a specific task to a high standard. Skills are format-compatible with the
 | [remove-ai-slop](remove-ai-slop/SKILL.md) | Eliminates AI detection signals from text — statistical, structural, and alignment artifacts |
 | [strategic-persuasion](strategic-persuasion/SKILL.md) | Cognitive rhetoric and audience-targeted persuasive content construction |
 | [technical-writer](technical-writer/SKILL.md) | Clear, accurate technical documentation for developers, operators, or end users; covers READMEs, API references, guides, runbooks, and architecture docs |
+| [swe](swe/SKILL.md) | Software engineering grounded in SOLID principles, Fielding's REST constraints, Gang of Four design patterns, and Enterprise Integration Patterns; emphasises planning, design, and iterative improvement |
 
 ## Using a skill
 
@@ -81,7 +82,9 @@ Skills/
 │   └── SKILL.md
 ├── strategy-author/
 │   └── SKILL.md
-└── technical-writer/
+├── technical-writer/
+│   └── SKILL.md
+└── swe/
     └── SKILL.md
 ```
 

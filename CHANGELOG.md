@@ -7,7 +7,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
-- `code-review/SKILL.md` — systematic multi-dimensional code review skill covering correctness, security, performance, maintainability, and style
+- `swe/SKILL.md` — software engineering skill grounded in SOLID, Fielding's REST constraints, Gang of Four patterns, and Enterprise Integration Patterns
 - `technical-writer/SKILL.md` — technical documentation writing skill covering READMEs, API references, guides, runbooks, and architecture documents
 - `backlog-manager/SKILL.md` — command-driven outcome-focused backlog management skill
 - `citation-discipline/SKILL.md` — claim–source binding and citation placement discipline skill
@@ -15,6 +15,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- `README.md`: added `swe` to the skills index table and repository structure tree
 - `README.md`: added `code-review` and `technical-writer` to the skills index table
 - `README.md`: updated repository structure tree to include the two new skill directories
 - `README.md`: added Related Resources section linking to agentskills.io, anthropics/skills, and two awesome-claude-skills lists
