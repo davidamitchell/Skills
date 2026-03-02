@@ -104,6 +104,29 @@ description: What this skill does and when to use it. Tools that support
 
 See the [Agent Skills open standard](https://agentskills.io) for the full specification.
 
+### Skill quality checklist
+
+Use this to evaluate a skill before adding it or after making changes.
+
+**Frontmatter**
+- [ ] `name` matches the directory name
+- [ ] `version` is present
+- [ ] `description` is a single, precise sentence naming the task and when to trigger the skill — vague descriptions cause spurious auto-invocation in tools that support automatic skill selection
+
+**Sections** (all must be present)
+- [ ] `## When Not to Use` — excludes clearly inappropriate contexts; at least two concrete exclusions
+- [ ] `## Interaction Protocol` — lists clarifying questions and specifies output style
+- [ ] `## Inputs and Outputs` — states input type, output type, and composability with other skills in this repo
+
+**Instruction quality**
+- [ ] Instructions are written as imperatives, not suggestions ("List all items" not "You should list all items")
+- [ ] No vague verbs: "handle", "manage", "deal with", "consider" each replaced with a precise action
+- [ ] Failure modes or stopping conditions are defined
+- [ ] No AI slop patterns: no formulaic transitions ("Furthermore", "In conclusion"), no symmetrical filler paragraphs, no safety-prefacing language
+
+**Verification**
+- [ ] Paste into an AI assistant with a realistic prompt and confirm the output matches the skill's stated intent
+
 ## Related resources
 
 Broader collections of skills and prompts that may contain further inspiration:

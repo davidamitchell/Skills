@@ -18,6 +18,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - `README.md`: added `code-review` and `technical-writer` to the skills index table
 - `README.md`: updated repository structure tree to include the two new skill directories
 - `README.md`: added Related Resources section linking to agentskills.io, anthropics/skills, and two awesome-claude-skills lists
+- `README.md`: expanded "Creating a new skill" section with a skill quality checklist covering frontmatter, required sections, instruction quality, and verification
 - All SKILL.md files: added `version: "1.0"` frontmatter field for consistency
 - All SKILL.md files: added `## When Not to Use` section to each skill for operational clarity
 - All SKILL.md files: added `## Interaction Protocol` section defining clarifying questions and output style
