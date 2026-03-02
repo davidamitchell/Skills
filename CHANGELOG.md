@@ -7,6 +7,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- `feedback/SKILL.md` — structured critique of written work, arguments, decisions, or plans; findings grouped by category (Structure, Argument/Logic, Clarity, Accuracy, Completeness, Style) with priority classification and summary format
+- `plain-language/SKILL.md` — plain-language rewriting skill; rewrites complex or technical text for non-expert audiences without losing accuracy or completeness; includes audience calibration, vocabulary substitution, sentence/paragraph restructuring, and accuracy safeguards
 - `code-review/SKILL.md` — systematic multi-dimensional code review skill covering correctness, security, performance, maintainability, and style
 - `technical-writer/SKILL.md` — technical documentation writing skill covering READMEs, API references, guides, runbooks, and architecture documents
 - `backlog-manager/SKILL.md` — command-driven outcome-focused backlog management skill
@@ -15,8 +17,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- `README.md`: added `feedback` and `plain-language` to the skills index table
 - `README.md`: added `code-review` and `technical-writer` to the skills index table
-- `README.md`: updated repository structure tree to include the two new skill directories
+- `README.md`: updated repository structure tree to include all new skill directories
+- `README.md`: added `BehiSecc/awesome-claude-skills` and `obra/superpowers` to Related Resources following a scan of popular skills repositories
 - `README.md`: added Related Resources section linking to agentskills.io, anthropics/skills, and two awesome-claude-skills lists
 - `README.md`: expanded "Creating a new skill" section with a skill quality checklist covering frontmatter, required sections, instruction quality, and verification
 - All SKILL.md files: added `version: "1.0"` frontmatter field for consistency
