@@ -5,11 +5,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- `research/SKILL.md`: expanded composability instructions to detail citation-discipline and speculation-control integration points; added Constraint Parameter section (full/bounded/rapid modes with per-mode evidence sufficiency criteria); added Source Prioritisation Heuristic; added Confidence Calibration table (high/medium/low) with per-finding labelling requirement; added Output Calibration section mapping constraint mode to synthesis depth; added Tool Awareness note referencing AGENTS.md § MCP Configuration; updated Section 2 evidence sufficiency criteria to reference the constraint parameter table
+- `strategy-author/SKILL.md`: added Research-to-Diagnosis Translation process (critical constraint extraction, symptom/cause separation, specificity test, evidence anchoring); added Contextual Adaptation section covering government/public sector, NZ SME, and regulated financial services; added required time horizon statement to Metrics and Milestones; added structured trade-offs table format (alternative → rejection reason → re-evaluation signal); added Diagnostic Precision Tests section (falsifiability test and constraint test); added Review Triggers section (time-based and event-based); added "Never diagnose a symptom as the core constraint" to Behavioral Constraints
 ### Added
 
 - `feedback/SKILL.md` — structured critique of written work, arguments, decisions, or plans; findings grouped by category (Structure, Argument/Logic, Clarity, Accuracy, Completeness, Style) with priority classification and summary format
 - `plain-language/SKILL.md` — plain-language rewriting skill; rewrites complex or technical text for non-expert audiences without losing accuracy or completeness; includes audience calibration, vocabulary substitution, sentence/paragraph restructuring, and accuracy safeguards
 - `code-review/SKILL.md` — systematic multi-dimensional code review skill covering correctness, security, performance, maintainability, and style
+- `swe/SKILL.md` — software engineering skill grounded in SOLID, Fielding's REST constraints, Gang of Four patterns, and Enterprise Integration Patterns
 - `technical-writer/SKILL.md` — technical documentation writing skill covering READMEs, API references, guides, runbooks, and architecture documents
 - `backlog-manager/SKILL.md` — command-driven outcome-focused backlog management skill
 - `citation-discipline/SKILL.md` — claim–source binding and citation placement discipline skill
@@ -18,6 +23,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 
 - `README.md`: added `feedback` and `plain-language` to the skills index table
+- `README.md`: added `swe` to the skills index table and repository structure tree
 - `README.md`: added `code-review` and `technical-writer` to the skills index table
 - `README.md`: updated repository structure tree to include all new skill directories
 - `README.md`: added `BehiSecc/awesome-claude-skills` and `obra/superpowers` to Related Resources following a scan of popular skills repositories

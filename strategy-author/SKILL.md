@@ -158,11 +158,15 @@ A structured list of coherent, reinforcing actions.
 
 ### 4. Trade-offs
 
-Explicit non-choices and rejected alternatives.
+Explicit non-choices and rejected alternatives. For each, state:
+
+| Alternative | Rejection reason | Re-evaluation signal |
+|---|---|---|
+| … | … | … |
 
 ### 5. Metrics and Milestones
 
-Quantified indicators and timelines.
+Quantified indicators and timelines. Every strategy output must state an explicit time horizon (e.g., "12-month", "3-year"). Milestones must be dated or sequenced relative to that horizon. Undated milestones are not acceptable.
 
 ### 6. Risks and Assumptions
 
@@ -184,6 +188,79 @@ Then rewrite to correct deficiencies. Eliminate vagueness. Sharpen decisions. In
 
 ---
 
+## Research-to-Diagnosis Translation
+
+When research findings are available as input, apply this process before drafting the diagnosis:
+
+1. **Extract the critical constraint** — identify the single factor most limiting progress or value creation.
+2. **Separate symptoms from causes** — research often surfaces symptoms (declining revenue, staff attrition, slow delivery). The diagnosis must name the cause, not the symptom.
+3. **Test specificity** — a diagnosis that could apply to any organisation in any sector is not a diagnosis. It is a description. Rewrite until it is specific to this situation.
+4. **Anchor to evidence** — every element of the diagnosis must trace back to a specific finding. If it cannot, label it as an assumption.
+
+Do not proceed to Guiding Policy until the diagnosis names a cause, is specific, and is grounded in evidence.
+
+---
+
+## Diagnostic Precision Tests
+
+Before proceeding past the diagnostic statement, apply both tests:
+
+### Falsifiability test
+
+State the conditions under which the diagnosis would be wrong. If no such conditions exist, the diagnosis is unfalsifiable and must be rewritten. A valid diagnosis has a clear alternative explanation that the evidence has ruled out.
+
+### Constraint test
+
+Confirm that the diagnosis names a binding constraint — something that, if resolved, would materially change the outcome. If resolving it would make no difference, it is not the core constraint. Identify the one that is.
+
+---
+
+## Contextual Adaptation
+
+Adjust the strategy approach based on the operating context:
+
+**Government and public sector**
+- Replace competitive advantage framing with capability and mandate alignment.
+- Trade-offs must account for political feasibility and legislative constraints.
+- Metrics must include public-value indicators alongside operational ones.
+- Timelines must align to budget cycles and electoral horizons.
+
+**New Zealand SME**
+- Resource constraints are typically binding — avoid strategies that assume scale.
+- Execution bandwidth is limited; coherent actions must be ruthlessly prioritised.
+- Regulatory environment: reference relevant NZ frameworks (Commerce Act, Consumer Guarantees Act, employment law) where applicable.
+- Export market entry should reference NZ Trade and Enterprise or equivalent support mechanisms when relevant.
+
+**Regulated financial services**
+- Guiding policy must be consistent with regulatory obligations (AML/CFT, FMC Act, CCCFA, or equivalent jurisdiction-specific requirements).
+- Risk and Assumptions section must include a compliance risk register.
+- Trade-offs must distinguish commercial choices from regulatory requirements — the latter are constraints, not options.
+
+In all contexts: state which adaptation applies at the top of the diagnostic statement.
+
+---
+
+## Review Triggers
+
+Define when the strategy should be reviewed and revised:
+
+### Time-based triggers
+
+State a review cadence in the Metrics and Milestones section. Minimum: one scheduled review per major time horizon segment (e.g., quarterly for a 12-month strategy).
+
+### Event-based triggers
+
+List the specific events that would require an unscheduled review. Examples:
+
+- A key assumption in the diagnosis is invalidated
+- A competitor action or market shift materially changes the constraint
+- A regulatory change alters the feasibility of a coherent action
+- Execution results deviate from leading indicators by a defined threshold
+
+If no review triggers are defined, the strategy is incomplete.
+
+---
+
 ## Behavioral Constraints
 
 - Never default to consensus language.
@@ -191,6 +268,7 @@ Then rewrite to correct deficiencies. Eliminate vagueness. Sharpen decisions. In
 - Never expand scope to avoid decision.
 - Never substitute goals for strategy.
 - Never use empty intensifiers.
+- Never diagnose a symptom as the core constraint — always trace to the underlying cause.
 
 Strategy requires choice. If no hard decision is visible, the work is incomplete.
 
