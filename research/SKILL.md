@@ -24,6 +24,7 @@ description: Performs rigorous, evidence-driven research using recursive decompo
 1. What is the research question or goal?
 2. What constraints apply (time, scope, source types)?
 3. What output format is needed (summary, full report, evidence map, Q&A)?
+4. What constraint mode applies — **full**, **bounded**, or **rapid**? (See Constraint Parameter below.)
 
 **Output style**:
 
@@ -37,13 +38,65 @@ description: Performs rigorous, evidence-driven research using recursive decompo
 
 **Input**: Research question or topic, with optional scope constraints and source preferences  
 **Output**: Structured findings containing executive summary, key findings, evidence map, assumptions, analysis, risks, and open questions  
-**Composability**: Use before strategy-author (to ground strategy in evidence); use alongside citation-discipline and speculation-control for full epistemic rigour
+**Composability**: Use before strategy-author (to ground strategy in evidence); use alongside citation-discipline (to bind every claim to a source) and speculation-control (to label all non-factual content) for full epistemic rigour; both skills apply throughout the investigation and synthesis phases
 
 ---
 
-## Purpose
+## Constraint Parameter
 
-Enable an agent to perform rigorous, evidence-driven research using recursive decomposition, iterative verification loops, and disciplined reasoning.
+Select the mode that matches the available time and required rigour.
+
+| Mode | Definition | Evidence Sufficiency |
+|---|---|---|
+| **full** | Exhaustive investigation with complete decomposition, multi-lens expansion, and consistency check loops | At least two independent credible sources agree, **or** a primary source is definitive; all sub-questions resolved |
+| **bounded** | Targeted investigation scoped to the highest-priority sub-questions; one consistency pass | At least two independent credible sources agree on each in-scope claim; out-of-scope claims flagged explicitly |
+| **rapid** | Single-pass investigation of the top-level question only; no recursive decomposition | One credible source per claim is acceptable; all findings marked with confidence level; limitations stated upfront |
+
+Default to **full** unless the user specifies otherwise or time constraints make it impractical.
+
+---
+
+## Source Prioritisation Heuristic
+
+When selecting among available sources, apply in order:
+
+1. **Primary sources** — original data, official publications, peer-reviewed research, direct statements from authoritative bodies
+2. **Secondary sources** — synthesis, analysis, or reporting directly grounded in primary sources; cite the primary when accessible
+3. **Tertiary sources** — encyclopedias, summaries, aggregators; use for orientation only, never as the sole basis for a claim
+
+When primary sources conflict, report both and state which is adopted and why. Do not silently favour one.
+
+---
+
+## Confidence Calibration
+
+Assign a confidence level to each key finding before synthesis.
+
+| Level | Criteria |
+|---|---|
+| **High** | Multiple independent primary or credible secondary sources agree; no unresolved contradictions; claim is specific and bounded |
+| **Medium** | One credible source, or multiple sources with minor conflicts; limited contradictions that are noted; inference is reasonable but not certain |
+| **Low** | Single source of uncertain quality, significant gaps, strong inferential leap, or active expert disagreement; claim requires further investigation |
+
+Label every key finding with its confidence level in the synthesis output. Do not aggregate findings into a single confidence rating — label each independently.
+
+---
+
+## Tool Awareness
+
+If MCP tools (web search, file access, database connectors) are available, use them to extend the evidence base. Refer to the project's AGENTS.md § MCP Configuration for the list of configured tools and their scope. When no external tools are available, state this at the start of the output and note that findings are limited to training-data knowledge with a knowledge cutoff.
+
+---
+
+## Output Calibration
+
+Adjust synthesis depth to the constraint mode in use:
+
+- **full**: Complete structured output per Section 6 (all seven components); include full evidence map and open questions
+- **bounded**: Abbreviated synthesis covering executive summary, key findings (in-scope only), assumptions, and flagged gaps; omit out-of-scope threads
+- **rapid**: Single-section summary with confidence labels on each claim; explicit limitations paragraph; no evidence map required
+
+In all modes: label inferences, state confidence levels, and surface unresolved questions. Do not silently reduce rigour — downgrade explicitly.
 
 ---
 
@@ -94,6 +147,8 @@ loop until evidence_sufficient or limits_reached:
 ```
 
 ### Evidence sufficiency criteria
+
+Apply the criteria for the active constraint mode (see Constraint Parameter table). In **full** mode:
 
 - At least two independent credible sources agree, **or**
 - A primary source is definitive.
