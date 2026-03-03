@@ -114,3 +114,35 @@ Append-only build journal. Each entry records what was done, what changed, and w
 - Consider a `feedback` skill for structured, constructive critique of written work or decisions
 - Consider a `plain-language` skill for simplifying complex content for non-expert audiences
 - Test new skills by pasting SKILL.md content into an AI assistant with representative prompts
+
+---
+
+## 2026-03-02 — Session 5: Scan of related resources and new skill additions
+
+**Session goal**: Address Issue — scan related resources and the latest popular skills repos on GitHub to identify what else can be added.
+
+**Completed**:
+
+- Reviewed all nine existing SKILL.md files for coverage gaps
+- Scanned related resources: anthropics/skills, ComposioHQ/awesome-claude-skills, travisvn/awesome-claude-skills, agentskills.io; also reviewed BehiSecc/awesome-claude-skills and obra/superpowers (both found in this session's scan)
+- Identified two skills deferred from Session 4 that are now clearly warranted: `feedback` and `plain-language`
+- Created `feedback/SKILL.md` — structured critique of written work, arguments, decisions, or plans; findings grouped by six categories (Structure, Argument/Logic, Clarity, Accuracy, Completeness, Style); four-level priority classification (`Critical` to `Suggestion`); summary format with strengths and highest-leverage improvement
+- Created `plain-language/SKILL.md` — rewrites complex or technical text so non-expert readers can understand it without losing accuracy; audience calibration step; plain language principles (vocabulary substitution, sentence and paragraph restructuring, document structure); accuracy safeguards to prevent meaning loss during simplification
+- Updated `README.md`: added both skills to the index table; updated the repository structure tree; added `BehiSecc/awesome-claude-skills` and `obra/superpowers` to Related Resources
+- Updated `CHANGELOG.md` with entries for this session
+- Updated `PROGRESS.md` (this entry)
+
+**Notes**:
+
+- `feedback` composability chain: use after strategy-author, research, or technical-writer; use before remove-ai-slop
+- `plain-language` composability chain: use after technical-writer or research; use alongside remove-ai-slop
+- Tooling-specific skills (TDD runners, git automation, browser testing) were reviewed but remain out of scope — they require external tool integration and are not portable SKILL.md prompts
+- BehiSecc/awesome-claude-skills and obra/superpowers were found in this scan and added to the Related Resources table
+
+**Blockers**: None.
+
+**Next session**:
+
+- Test new skills by pasting SKILL.md content into an AI assistant with representative prompts
+- Consider a `debugging` skill for structured fault isolation and diagnosis (would complement code-review)
+- Consider a `decision-record` skill for writing structured architecture decision records

@@ -12,6 +12,8 @@ a specific task to a high standard. Skills are format-compatible with the
 | [backlog-manager](backlog-manager/SKILL.md) | Command-driven outcome-focused backlog in a single file; add, refine, and track work items by observable result |
 | [citation-discipline](citation-discipline/SKILL.md) | Binds every factual claim to a verifiable source at the point of assertion; enforces citation placement, source quality, and precision |
 | [code-review](code-review/SKILL.md) | Systematic multi-dimensional code review covering correctness, security, performance, and maintainability; produces prioritised, actionable findings |
+| [feedback](feedback/SKILL.md) | Structured, evidence-grounded critique of written work, arguments, decisions, or plans; findings are specific, prioritised, and paired with concrete recommendations |
+| [plain-language](plain-language/SKILL.md) | Rewrites complex or technical text so a non-expert reader can understand it without losing accuracy or completeness |
 | [research](research/SKILL.md) | Rigorous, evidence-driven research using recursive decomposition and verification loops |
 | [speculation-control](speculation-control/SKILL.md) | Enforces strict separation between evidence-based statements and speculative, interpretive, or subjective content |
 | [strategy-author](strategy-author/SKILL.md) | High-rigour strategy documents grounded in Rumelt and Porter frameworks |
@@ -71,6 +73,10 @@ Skills/
 ├── citation-discipline/
 │   └── SKILL.md
 ├── code-review/
+│   └── SKILL.md
+├── feedback/
+│   └── SKILL.md
+├── plain-language/
 │   └── SKILL.md
 ├── remove-ai-slop/
 │   └── SKILL.md
@@ -140,6 +146,8 @@ Broader collections of skills and prompts that may contain further inspiration:
 | [anthropics/skills](https://github.com/anthropics/skills) | Official skills from Anthropic: document processing, design, development, and communication |
 | [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | Curated list of community-built skills with categories for dev tools, data analysis, business, and more |
 | [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) | Curated index of official and community skills with installation instructions |
+| [BehiSecc/awesome-claude-skills](https://github.com/BehiSecc/awesome-claude-skills) | Large community skill list searchable by domain; dev tools, automation, data, security, and project management |
+| [obra/superpowers](https://github.com/obra/superpowers) | Battle-tested skills library for Claude Code including TDD, debugging, brainstorm, and collaboration patterns |
 
 ## Contributing
 
