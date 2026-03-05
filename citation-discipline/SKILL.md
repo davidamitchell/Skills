@@ -89,6 +89,12 @@ consistently, and integrated into prose without disrupting clarity or flow.
 - Avoid causal language unless the source demonstrates causality.
 - Avoid generalizing from single examples.
 
+### Terminology and Acronyms
+
+- On first use, expand every acronym and initialism: write the full term followed by the abbreviation in parentheses — e.g., "Large Language Model (LLM)". Use only the abbreviation thereafter.
+- Link every non-self-evident domain term to its authoritative definition on first use — an official specification, standards body publication, or recognised authoritative glossary. Do not use summaries, encyclopedias, or tertiary sources for this purpose.
+- If no authoritative definition source is available, flag the term with `[DEFINITION NEEDED]` rather than silently omitting the link.
+
 ### Verification
 
 - Before finalizing, re-check each claim–source pair for accuracy, scope, and fidelity to the source.
@@ -102,3 +108,5 @@ consistently, and integrated into prose without disrupting clarity or flow.
 - Overgeneralizing from limited evidence
 - Using citations as decoration rather than justification
 - Introducing in footnotes facts that belong in the main text
+- Using an acronym or initialism without expanding it on first use
+- Using non-self-evident domain terms without linking to an authoritative definition
