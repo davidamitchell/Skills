@@ -175,6 +175,8 @@ loop until no contradictions remain:
   scan for internal inconsistencies
   scan for unsupported leaps
   scan for ambiguous terms
+  scan for unexpanded acronyms or initialisms on first use
+  scan for non-self-evident terms lacking an authoritative definition link
   if contradiction found:
     trace back to source
     revise or flag uncertainty
@@ -231,3 +233,5 @@ Stop only when:
 - Every claim is sourced, or if inferred, labelled as inference
 - All uncertainties are explicit
 - No unlabelled assumptions
+- Every acronym and initialism is expanded on first use
+- Every non-self-evident domain term is linked to an authoritative definition
