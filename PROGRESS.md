@@ -146,3 +146,23 @@ Append-only build journal. Each entry records what was done, what changed, and w
 - Test new skills by pasting SKILL.md content into an AI assistant with representative prompts
 - Consider a `debugging` skill for structured fault isolation and diagnosis (would complement code-review)
 - Consider a `decision-record` skill for writing structured architecture decision records
+
+---
+
+## 2026-03-07 — Session 7: Strategy skill gap closure
+
+**Session goal**: Address Issue — implement remaining improvements to strategy-author/SKILL.md per the problem statement.
+
+**Completed**:
+
+- Audited `strategy-author/SKILL.md` against all seven requirements in the problem statement
+- Confirmed that six of seven requirements were already implemented in Session 6 (fe28eab): Research-to-Diagnosis Translation, Contextual Adaptation, time horizon requirement, trade-offs table format, Diagnostic Precision Tests, Review Triggers, and symptom/cause behavioural constraint
+- Identified one remaining gap: the ranking criteria for when multiple diagnostic candidates exist was missing from the Research-to-Diagnosis Translation section
+- Added step 2 to Research-to-Diagnosis Translation: "Rank candidates if multiple exist — if more than one constraint or opportunity is plausible, rank by: (a) centrality to competitive position, (b) tractability within the decision horizon, (c) irreversibility if not addressed. The diagnosis is the highest-ranked item."
+- Updated `CHANGELOG.md` to reflect the candidate-ranking addition
+
+**Notes**:
+
+- The ranking criteria (centrality, tractability, irreversibility) were specified verbatim in the problem statement and are now included in the skill
+
+**Blockers**: None.

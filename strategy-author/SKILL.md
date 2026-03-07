@@ -193,9 +193,10 @@ Then rewrite to correct deficiencies. Eliminate vagueness. Sharpen decisions. In
 When research findings are available as input, apply this process before drafting the diagnosis:
 
 1. **Extract the critical constraint** — identify the single factor most limiting progress or value creation.
-2. **Separate symptoms from causes** — research often surfaces symptoms (declining revenue, staff attrition, slow delivery). The diagnosis must name the cause, not the symptom.
-3. **Test specificity** — a diagnosis that could apply to any organisation in any sector is not a diagnosis. It is a description. Rewrite until it is specific to this situation.
-4. **Anchor to evidence** — every element of the diagnosis must trace back to a specific finding. If it cannot, label it as an assumption.
+2. **Rank candidates if multiple exist** — if more than one constraint or opportunity is plausible, rank by: (a) centrality to competitive position, (b) tractability within the decision horizon, (c) irreversibility if not addressed. The diagnosis is the highest-ranked item.
+3. **Separate symptoms from causes** — research often surfaces symptoms (declining revenue, staff attrition, slow delivery). The diagnosis must name the cause, not the symptom.
+4. **Test specificity** — a diagnosis that could apply to any organisation in any sector is not a diagnosis. It is a description. Rewrite until it is specific to this situation.
+5. **Anchor to evidence** — every element of the diagnosis must trace back to a specific finding. If it cannot, label it as an assumption.
 
 Do not proceed to Guiding Policy until the diagnosis names a cause, is specific, and is grounded in evidence.
 
