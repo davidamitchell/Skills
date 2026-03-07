@@ -111,7 +111,25 @@ When producing strategy:
 6. Identify risks and assumptions.
 7. Test coherence: do the parts reinforce the whole?
 
-Do not proceed past diagnosis until it is precise.
+Do not proceed past diagnosis until it is precise. Apply both precision tests before proceeding:
+
+**Falsifiability test**: Can you describe what a successful outcome looks like AND what a failed outcome looks like? If the diagnosis is too vague to distinguish them, it is not precise enough.
+
+**Constraint test**: Does the diagnosis identify a specific constraint or leverage point, not a general theme? "We face AI talent shortage" is a theme. "We cannot scale Type 3 AI deployments because we lack ML engineers with NLP domain expertise in financial risk, and hiring is 12+ month lead time" is a diagnosis.
+
+---
+
+## Research-to-Diagnosis Translation
+
+When research findings are available as input, apply this process before drafting the diagnosis:
+
+1. **Extract the critical constraint** — identify the single factor most limiting progress or value creation.
+2. **Rank candidates if multiple exist** — if more than one constraint or opportunity is plausible, rank by: (a) centrality to competitive position, (b) tractability within the decision horizon, (c) irreversibility if not addressed. The diagnosis is the highest-ranked item.
+3. **Separate symptoms from causes** — research often surfaces symptoms (declining revenue, staff attrition, slow delivery). The diagnosis must name the cause, not the symptom.
+4. **Test specificity** — a diagnosis that could apply to any organisation in any sector is not a diagnosis. It is a description. Rewrite until it is specific to this situation.
+5. **Anchor to evidence** — every element of the diagnosis must trace back to a specific finding. If it cannot, label it as an assumption.
+
+Do not proceed to Guiding Policy until the diagnosis names a cause, is specific, and is grounded in evidence.
 
 ---
 
@@ -168,6 +186,13 @@ Explicit non-choices and rejected alternatives. For each, state:
 
 Quantified indicators and timelines. Every strategy output must state an explicit time horizon (e.g., "12-month", "3-year"). Milestones must be dated or sequenced relative to that horizon. Undated milestones are not acceptable.
 
+Include a review cadence: minimum one scheduled review per major time horizon segment (e.g., quarterly for a 12-month strategy). List the specific events that would require an unscheduled review:
+
+- A key assumption in the diagnosis is invalidated
+- A competitor action or market shift materially changes the constraint
+- A regulatory change alters the feasibility of a coherent action
+- Execution results deviate from leading indicators by a defined threshold
+
 ### 6. Risks and Assumptions
 
 Key uncertainties and monitoring approach.
@@ -185,34 +210,6 @@ When reviewing a strategy, evaluate:
 - Are assumptions visible?
 
 Then rewrite to correct deficiencies. Eliminate vagueness. Sharpen decisions. Increase coherence. Clarify outcomes.
-
----
-
-## Research-to-Diagnosis Translation
-
-When research findings are available as input, apply this process before drafting the diagnosis:
-
-1. **Extract the critical constraint** — identify the single factor most limiting progress or value creation.
-2. **Rank candidates if multiple exist** — if more than one constraint or opportunity is plausible, rank by: (a) centrality to competitive position, (b) tractability within the decision horizon, (c) irreversibility if not addressed. The diagnosis is the highest-ranked item.
-3. **Separate symptoms from causes** — research often surfaces symptoms (declining revenue, staff attrition, slow delivery). The diagnosis must name the cause, not the symptom.
-4. **Test specificity** — a diagnosis that could apply to any organisation in any sector is not a diagnosis. It is a description. Rewrite until it is specific to this situation.
-5. **Anchor to evidence** — every element of the diagnosis must trace back to a specific finding. If it cannot, label it as an assumption.
-
-Do not proceed to Guiding Policy until the diagnosis names a cause, is specific, and is grounded in evidence.
-
----
-
-## Diagnostic Precision Tests
-
-Before proceeding past the diagnostic statement, apply both tests:
-
-### Falsifiability test
-
-State the conditions under which the diagnosis would be wrong. If no such conditions exist, the diagnosis is unfalsifiable and must be rewritten. A valid diagnosis has a clear alternative explanation that the evidence has ruled out.
-
-### Constraint test
-
-Confirm that the diagnosis names a binding constraint — something that, if resolved, would materially change the outcome. If resolving it would make no difference, it is not the core constraint. Identify the one that is.
 
 ---
 
@@ -238,27 +235,6 @@ Adjust the strategy approach based on the operating context:
 - Trade-offs must distinguish commercial choices from regulatory requirements — the latter are constraints, not options.
 
 In all contexts: state which adaptation applies at the top of the diagnostic statement.
-
----
-
-## Review Triggers
-
-Define when the strategy should be reviewed and revised:
-
-### Time-based triggers
-
-State a review cadence in the Metrics and Milestones section. Minimum: one scheduled review per major time horizon segment (e.g., quarterly for a 12-month strategy).
-
-### Event-based triggers
-
-List the specific events that would require an unscheduled review. Examples:
-
-- A key assumption in the diagnosis is invalidated
-- A competitor action or market shift materially changes the constraint
-- A regulatory change alters the feasibility of a coherent action
-- Execution results deviate from leading indicators by a defined threshold
-
-If no review triggers are defined, the strategy is incomplete.
 
 ---
 
