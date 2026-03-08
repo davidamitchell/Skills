@@ -304,6 +304,18 @@ Stop when:
 
 ---
 
+## Mandatory Pre-Commit Scan
+
+Run these checks in order before finalising any document. Do not mark output complete until all five pass.
+
+1. **Enumeration-and-convergence**: Search for any sentence matching the pattern "N independent [sources/literatures/fields] — X, Y, and Z — converge on..." (or close variants). If found, rewrite to state the point directly or delete the framing.
+2. **Symmetrical contrast**: Search for any sequence of sentences forming a "Higher X requires... Lower X requires... The design sits at..." pattern or equivalent symmetrical bracketing. If found, rewrite to state the design choice directly without the scaffold.
+3. **Near-verbatim repetition**: For each section, check whether any sentence appears in substance in more than one section (with only word substitution). If found, retain the instance where it has the most analytical weight and remove or compress the repeat.
+4. **Over-explained causality**: Search for any phrase of the form "directly supporting the [claim]", "which demonstrates [already-evident point]", or "thereby confirming [conclusion]". If found, delete the narration — let the evidence speak.
+5. **Repeated sentence-opening pattern**: Check whether three or more consecutive paragraphs open with the same syntactic structure (e.g. all beginning with "This", all beginning with a gerund, all beginning with "The [noun]"). If found, vary the structure of at least two openings.
+
+---
+
 # 10. Failure Modes
 
 - Over-randomization
@@ -311,6 +323,11 @@ Stop when:
 - Artificial awkwardness
 - Stylistic degradation
 - Loss of clarity
+- Enumeration-and-convergence framing: "N independent [sources/literatures/fields] — X, Y, and Z — converge on..." used to open or close a section.
+- Symmetrical contrast scaffold: "Higher X requires... Lower X requires... The design sits at..." or equivalent symmetrical framing used in place of a direct statement.
+- Near-verbatim repetition between sections: the same claim restated in substance across multiple sections with only surface word substitution.
+- Over-explained causality: narration of the obvious ("directly supporting the claim", "which demonstrates the point") appended to evidence that already speaks for itself.
+- Repeated sentence-opening pattern: three or more consecutive paragraphs opening with the same syntactic structure.
 
 If detected:
 Rollback last disruption layer.

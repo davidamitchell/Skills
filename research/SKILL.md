@@ -235,3 +235,11 @@ Stop only when:
 - No unlabelled assumptions
 - Every acronym and initialism is expanded on first use
 - Every non-self-evident domain term is linked to an authoritative definition
+
+## 8. Output Finalisation
+
+Before marking output complete, run each of the following in order. Do not output until all three pass.
+
+1. **Citation-discipline pre-output checklist** — acronym scan, citation URL/DOI check, web-search-synthesis prohibition, primary-source requirement, scope-match check, and epistemic label audit (see `citation-discipline/SKILL.md`).
+2. **Speculation-control pre-output scan** — evaluative/comparative terms scan and causal claims scan (see `speculation-control/SKILL.md`).
+3. **Remove-ai-slop pre-commit scan** — enumeration-and-convergence check, symmetrical contrast check, near-verbatim repetition check, over-explained causality check, and repeated sentence-opening pattern check (see `remove-ai-slop/SKILL.md`).

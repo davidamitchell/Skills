@@ -166,3 +166,29 @@ Append-only build journal. Each entry records what was done, what changed, and w
 - The ranking criteria (centrality, tractability, irreversibility) were specified verbatim in the problem statement and are now included in the skill
 
 **Blockers**: None.
+
+---
+
+## 2026-03-08 — Session 8: Skill hardening after research document failures (#63–#66)
+
+**Session goal**: Address four research document failures (Issues #63–#66, 2026-03-08). All four documents shared the same five failure patterns. Update the relevant skills to prevent recurrence.
+
+**Completed**:
+
+- Audited `citation-discipline/SKILL.md`, `speculation-control/SKILL.md`, `remove-ai-slop/SKILL.md`, and `research/SKILL.md` against the five observed failure patterns
+- `citation-discipline/SKILL.md`: added Mandatory Pre-Output Checklist (six ordered steps: acronym scan, citation URL/DOI check, web-search-synthesis prohibition, primary-source requirement for external claims, scope-match check, epistemic label audit); added Epistemic Label Boundary definition for `[fact]` vs `[inference]`; added two new failure mode entries (scoped/secondary-source citation, name-only citation without URL/DOI)
+- `speculation-control/SKILL.md`: added Mandatory Pre-Output Scan (two steps: evaluative/comparative terms scan and causal claims scan); added two new failure mode entries (unlabeled evaluative/comparative judgment, causal claim stated as fact without primary source)
+- `remove-ai-slop/SKILL.md`: added Mandatory Pre-Commit Scan section with five specific checks (enumeration-and-convergence, symmetrical contrast, near-verbatim repetition, over-explained causality, repeated sentence-opening pattern); added each pattern as an explicit failure mode entry alongside existing entries
+- `research/SKILL.md`: added Section 8 Output Finalisation requiring all three pre-output scans to pass before output is marked complete
+- Updated `CHANGELOG.md` under [Unreleased]
+- Updated `PROGRESS.md` (this entry)
+
+**Root causes addressed**:
+
+1. Acronym expansion failures → citation-discipline mandatory checklist step 1
+2. Wrong/unverifiable citations → citation-discipline checklist steps 2–5
+3. Unlabeled evaluative and causal claims → speculation-control mandatory scan
+4. AI-slop prose patterns → remove-ai-slop mandatory pre-commit scan
+5. Incorrect epistemic labels ([fact] vs [inference]) → citation-discipline epistemic label boundary definition and checklist step 6
+
+**Blockers**: None.

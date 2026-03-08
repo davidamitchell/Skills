@@ -94,9 +94,20 @@ interpretive or subjective material.
 
 ---
 
+## Mandatory Pre-Output Scan
+
+Run these steps in order before outputting any document. Do not mark output as complete until all steps pass.
+
+1. **Evaluative and comparative terms scan**: Find every sentence containing the words "right", "correct", "best", "most", "superior", "adequate", "sufficient", "pragmatic", "appropriate", "optimal", or any superlative form. For each sentence, verify it is either: (a) directly supported by a cited source that makes the same evaluative claim, or (b) labeled `Opinion:`, `[inference]`, or `[assumption]`. If neither condition is met, apply the appropriate label or remove the evaluative framing.
+2. **Causal claims scan**: Find every sentence containing causal language ("causes", "leads to", "results in", "degrades when", "is a manifestation of", "is triggered by", "produces", or equivalent constructions). Verify each causal claim is labeled `[inference]` unless a primary source directly asserts the causal relationship. If the source only correlates, narrates, or implies the relationship, the claim must be labeled `[inference]`.
+
+---
+
 ## Failure Modes
 
 - Implicit speculation disguised as fact
 - Opinions embedded in factual prose
 - Filling evidentiary gaps with invented detail
 - Overconfident language unsupported by evidence
+- Evaluative or comparative judgment ("the right design", "the best available option", "superior to all alternatives") presented as a conclusion without an `Opinion:`, `[inference]`, or `[assumption]` label.
+- Causal claim ("X causes Y", "Y degrades whenever X", "X is a manifestation of Y") stated as an established fact without a primary source directly asserting the causal relationship.
