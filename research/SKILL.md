@@ -104,7 +104,19 @@ In all modes: label inferences, state confidence levels, and surface unresolved 
 
 - Restate the research question.
 - Identify scope, constraints, definitions, and required outputs.
-- Search completed research items for prior related work. If a completed item is directly relevant, cite it as prior art in the evidence map and note where its findings apply or conflict with the current investigation.
+- Search `completed` and `reviewing` research items for prior related work. If a relevant item is found, cite it as prior art in the evidence map and note where its findings apply or conflict with the current investigation.
+
+**Lifecycle states**: `backlog | in-progress | reviewing | completed`
+
+Items with `status: reviewing` remain in `Research/in-progress/` with findings ready for review. To mark findings ready for review and then complete:
+
+```
+python -m src.main research draft <filename>
+git add Research/in-progress/<filename>
+git commit -m "research: draft - <filename>"
+# After review passes:
+python -m src.main research complete <filename>
+```
 
 ---
 
