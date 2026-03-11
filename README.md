@@ -15,6 +15,8 @@ a specific task to a high standard. Skills are format-compatible with the
 | [feedback](feedback/SKILL.md) | Structured, evidence-grounded critique of written work, arguments, decisions, or plans; findings are specific, prioritised, and paired with concrete recommendations |
 | [plain-language](plain-language/SKILL.md) | Rewrites complex or technical text so a non-expert reader can understand it without losing accuracy or completeness |
 | [research](research/SKILL.md) | Rigorous, evidence-driven research using recursive decomposition and verification loops |
+| [research-question](research-question/SKILL.md) | Validates and scopes a research question before investigation begins; checks specificity, answerability, scope, motivation, and decomposability |
+| [research-reviewer](research-reviewer/SKILL.md) | Audits a completed research item for citation discipline, speculation control, and writing quality; audit-only, never edits |
 | [speculation-control](speculation-control/SKILL.md) | Enforces strict separation between evidence-based statements and speculative, interpretive, or subjective content |
 | [strategy-author](strategy-author/SKILL.md) | High-rigour strategy documents grounded in Rumelt and Porter frameworks |
 | [remove-ai-slop](remove-ai-slop/SKILL.md) | Eliminates AI detection signals from text — statistical, structural, and alignment artifacts |
@@ -82,6 +84,10 @@ Skills/
 │   └── SKILL.md
 ├── research/
 │   └── SKILL.md
+├── research-question/
+│   └── SKILL.md
+├── research-reviewer/
+│   └── SKILL.md
 ├── speculation-control/
 │   └── SKILL.md
 ├── strategic-persuasion/
@@ -132,6 +138,7 @@ Use this to evaluate a skill before adding it or after making changes.
 - [ ] No vague verbs: "handle", "manage", "deal with", "consider" each replaced with a precise action
 - [ ] Failure modes or stopping conditions are defined
 - [ ] No AI slop patterns: no formulaic transitions ("Furthermore", "In conclusion"), no symmetrical filler paragraphs, no safety-prefacing language
+- [ ] No implementation-specific references: no CLI commands, repo paths, file paths, or tool-specific syntax — skills must work with any agent and any repo
 
 **Verification**
 - [ ] Paste into an AI assistant with a realistic prompt and confirm the output matches the skill's stated intent
@@ -151,5 +158,6 @@ Broader collections of skills and prompts that may contain further inspiration:
 
 ## Contributing
 
-Add new skills to the root of the repo, following the SKILL.md format. Update this README's
-index table and add a CHANGELOG entry.
+Add new skills to the root of the repo as a named directory containing `SKILL.md`. Follow the format in "Creating a new skill" above. Update this README's index table and repository structure tree. Add a CHANGELOG entry.
+
+**Skills must be implementation-agnostic.** Do not reference specific CLI commands, file paths, repo names, or tool-specific syntax in a SKILL.md. This repo is consumed as a git submodule by other repositories. A skill that references one repo's CLI will break silently when used in any other context. If you find yourself writing a path like `Research/in-progress/` or a command like `python -m src.main` in a SKILL.md, stop — that content belongs in the consuming repo's prompt files, not in the skill.

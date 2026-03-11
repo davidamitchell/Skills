@@ -5,6 +5,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+- `research-question/SKILL.md` — pre-flight skill for validating and scoping a research question before investigation begins
+- `research-reviewer/SKILL.md` — audit-only review skill for completed research items; checks citation discipline, speculation control, and writing quality
+- `README.md`: added implementation-agnostic constraint to skill quality checklist and contributing section
+
 ### Changed
 
 - `citation-discipline/SKILL.md`: added Mandatory Pre-Output Checklist (acronym scan, citation URL/DOI check, web-search-synthesis prohibition, primary-source requirement, scope-match check, epistemic label audit); added Epistemic Label Boundary definition for `[fact]` vs `[inference]`; added two new failure modes: "Citing a scoped or secondary source for a claim about a different scope" and "Listing a citation by name or description only, without a URL or DOI".

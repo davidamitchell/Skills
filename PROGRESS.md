@@ -192,3 +192,23 @@ Append-only build journal. Each entry records what was done, what changed, and w
 5. Incorrect epistemic labels ([fact] vs [inference]) → citation-discipline epistemic label boundary definition and checklist step 6
 
 **Blockers**: None.
+
+---
+
+## 2026-03-11 — Session 9: New skills and implementation-agnostic constraint
+
+**Session goal**: Address PR #16 review — revert repo-specific CLI commands from `research/SKILL.md`, add `research-question` and `research-reviewer` skills, and prevent implementation-specific content from appearing in skills.
+
+**Completed**:
+
+- Fixed `research/SKILL.md` §0 Initialise: updated prior-work search line to include `reviewing` status alongside `completed`; no CLI commands, repo paths, or lifecycle state tables added — skill remains implementation-agnostic
+- Created `research-question/SKILL.md` — standalone pre-flight skill for validating and scoping a research question before investigation begins; five-test quality framework (Specific, Answerable, Scoped, Motivated, Decomposable); question rewriting pattern; approach decomposition rules; READY/NEEDS REVISION readiness verdict format
+- Created `research-reviewer/SKILL.md` — audit-only review skill for completed research items; applies `citation-discipline`, `speculation-control`, and `remove-ai-slop` in sequence; structured PASS/FAIL violation report format; scope notes for full vs lighter checking by section
+- Updated `README.md`: added both new skills to the index table; added both new directories to the repository structure tree; added implementation-agnostic constraint to the skill quality checklist; replaced Contributing section with explicit prohibition against CLI commands, repo paths, and tool-specific syntax in SKILL.md files
+- Updated `CHANGELOG.md`: added entries for all new additions under [Unreleased]
+
+**Root cause addressed**:
+
+PR #16 added `python -m src.main` CLI commands, `Research/in-progress/` file paths, and a lifecycle states table directly into `research/SKILL.md`. Skills are consumed as a git submodule across multiple repositories — embedding one repo's CLI couples the skill to that implementation and breaks silently elsewhere. The Contributing section and skill quality checklist now state this constraint explicitly.
+
+**Blockers**: None.
