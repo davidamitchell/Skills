@@ -34,16 +34,19 @@ description: Checks a completed research item for logical coherence, alternative
 
 ---
 
-## Check 1 — Logical Coherence
+## Check 1 — Logical Coherence and Evidence Sufficiency
 
-Verify that every conclusion stated in the Executive Summary is traceable to evidence in the Findings or Evidence Map.
+Verify that every conclusion stated in the Executive Summary is traceable to evidence in the Findings or Evidence Map, and that assigned confidence levels are calibrated to source count and independence.
 
 Flag if any of the following are present:
 
 - A conclusion in the Executive Summary that has no corresponding supporting evidence in the Findings or Evidence Map
 - A conclusion that contradicts or overstates what the cited evidence actually shows
-- A confidence level (e.g., "high confidence", "likely", "strongly suggests") that is not calibrated to the volume and quality of evidence — e.g., asserting high confidence from a single secondary source, or expressing low confidence when multiple primary sources converge
 - A causal claim in the Executive Summary that is not labelled as inference and not supported by a causal study or mechanism in the Findings
+- A confidence level assigned to a Key Finding that is inconsistent with the evidence provided:
+  - **High** requires multiple independent primary or credible secondary sources with no unresolved contradictions; flag if fewer than two independent sources are cited
+  - **Medium** requires at least one credible source, or multiple sources with minor noted conflicts; flag if the single source is of uncertain quality or the inference is a significant leap
+  - **Low** applies when sources are of uncertain quality, evidence gaps are significant, or the claim involves a strong inferential leap; flag if High or Medium is assigned under these conditions
 
 Do not flag conclusions that are labelled as inference, hypothesis, or speculation when the label is present and appropriate.
 
@@ -84,7 +87,7 @@ Produce the report in this exact format:
 
 ```
 REVIEW_TARGET: <item identifier or title>
-logical-coherence: PASS | FAIL
+logical-coherence-and-evidence-sufficiency: PASS | FAIL
   VIOLATION: <specific violation with section reference or quote>
 alternative-explanations: PASS | FAIL
   VIOLATION: <specific violation with section reference or quote>

@@ -292,6 +292,6 @@ Apply the mandatory pre-commit scan from `remove-ai-slop/SKILL.md`. All five che
 
 Apply the checks from `peer-reviewer/SKILL.md`. All three checks must pass:
 
-1. **Logical coherence** — every conclusion in the Executive Summary is traceable to evidence in the Findings or Evidence Map; confidence levels are calibrated to the volume and quality of evidence
+1. **Logical coherence and evidence sufficiency** — every conclusion in the Executive Summary is traceable to evidence in the Findings or Evidence Map; confidence levels are calibrated to source count and independence per the Confidence Calibration table above (High = multiple independent sources, Medium = one credible source, Low = single or uncertain source / strong inferential leap)
 2. **Alternative explanations** — at least one major competing hypothesis or alternative interpretation is addressed for any contested or multi-causal finding; alternatives are either integrated or excluded with stated reasoning
 3. **Cross-item integration** — any conclusion that depends on, contradicts, or extends a related completed item includes a cross-reference to that item

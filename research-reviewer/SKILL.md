@@ -95,7 +95,7 @@ Apply `remove-ai-slop/SKILL.md` checks in full.
 Check the Executive Summary, Key Findings, and Analysis sections for:
 
 - Conclusions in the Executive Summary that lack corresponding supporting evidence in the Findings or Evidence Map
-- Confidence levels not calibrated to the volume and quality of evidence (e.g., high confidence from a single secondary source, or low confidence when multiple primary sources converge)
+- Confidence levels not calibrated to source count and independence: High requires multiple independent sources; Medium requires one credible source; Low applies to single uncertain sources or strong inferential leaps
 - Central findings that present a single explanation for a contested or multi-causal phenomenon without acknowledging alternatives exist
 - Competing hypotheses dismissed without reasoning or evidence
 - Missing cross-references to related completed items where the connection is material to the conclusion
@@ -117,7 +117,12 @@ speculation-control: PASS | FAIL
 remove-ai-slop: PASS | FAIL
   VIOLATION: <specific violation with section reference or quote>
 peer-reviewer: PASS | FAIL
-  VIOLATION: <specific violation with section reference or quote>
+  logical-coherence-and-evidence-sufficiency: PASS | FAIL
+    VIOLATION: <specific violation with section reference or quote>
+  alternative-explanations: PASS | FAIL
+    VIOLATION: <specific violation with section reference or quote>
+  cross-item-integration: PASS | FAIL
+    VIOLATION: <specific violation with section reference or quote>
 OVERALL: PASS | FAIL
 ```
 

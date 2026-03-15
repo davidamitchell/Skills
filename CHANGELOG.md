@@ -13,8 +13,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
-- `research-reviewer/SKILL.md`: added Step 4 — Peer Review, applying `peer-reviewer/SKILL.md` checks; updated output format to include `peer-reviewer: PASS | FAIL`; updated composability note and scope note to reference all four skills; updated `OVERALL` rule to require all four skills to pass; updated description to mention logical coherence
-- `research/SKILL.md`: added §8.4 Peer-review pre-output check (logical coherence, alternative explanations, cross-item integration); updated Section 8 preamble to reference all four pre-output checks
+- `research-reviewer/SKILL.md`: added Step 4 — Peer Review, applying `peer-reviewer/SKILL.md` checks
+- `research-reviewer/SKILL.md`: updated output format to include per-check sub-results (logical-coherence-and-evidence-sufficiency, alternative-explanations, cross-item-integration) under `peer-reviewer:`
+- `research-reviewer/SKILL.md`: confidence calibration criteria now explicit (High/Medium/Low) in Step 4 summary; updated composability note, scope note, `OVERALL` rule, and description to reflect all four skills
+- `research/SKILL.md`: added §8.4 Peer-review pre-output check; confidence calibration criteria reference the Confidence Calibration table with explicit High/Medium/Low criteria; Section 8 preamble updated to reference all four pre-output checks
 - `README.md`: added `peer-reviewer` to the skills index table and repository structure tree; updated `research-reviewer` description
 
 - `citation-discipline/SKILL.md`: added Mandatory Pre-Output Checklist (acronym scan, citation URL/DOI check, web-search-synthesis prohibition, primary-source requirement, scope-match check, epistemic label audit); added Epistemic Label Boundary definition for `[fact]` vs `[inference]`; added two new failure modes: "Citing a scoped or secondary source for a claim about a different scope" and "Listing a citation by name or description only, without a URL or DOI".
