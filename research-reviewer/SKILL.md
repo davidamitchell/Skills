@@ -1,7 +1,7 @@
 ---
 name: research-reviewer
 version: "1.0"
-description: Audits a completed research item for citation discipline, speculation control, and writing quality. Use after research investigation is complete and before the item is marked done. Audit-only — never edits the item.
+description: Audits a completed research item for citation discipline, speculation control, writing quality, and logical coherence. Use after research investigation is complete and before the item is marked done. Audit-only — never edits the item.
 ---
 
 # Skill: Research Item Review
@@ -30,7 +30,7 @@ description: Audits a completed research item for citation discipline, speculati
 
 **Input**: A completed research item in structured Markdown format with Research Skill Output and Findings sections  
 **Output**: A structured audit report with per-skill PASS/FAIL verdicts and specific violations  
-**Composability**: Use after `research` §8 Output Finalisation; referenced in `research` skill as the final gate before marking an item complete. Applies `citation-discipline`, `speculation-control`, and `remove-ai-slop` in sequence.
+**Composability**: Use after `research` §8 Output Finalisation; referenced in `research` skill as the final gate before marking an item complete. Applies `citation-discipline`, `speculation-control`, `remove-ai-slop`, and `peer-reviewer` in sequence.
 
 ---
 
@@ -38,7 +38,7 @@ description: Audits a completed research item for citation discipline, speculati
 
 Apply these standards consistently across all items:
 
-**Research Skill Output and Findings sections**: Full audit. All three skills apply at maximum rigour.
+**Research Skill Output and Findings sections**: Full audit. All four skills apply at maximum rigour.
 
 **Context section**: Lighter standard.
 - `citation-discipline`: flag only hard factual claims (specific statistics, named studies, precise dates) that lack a source. Do not flag framing prose, motivating rationale, or working hypotheses.
@@ -90,6 +90,20 @@ Apply `remove-ai-slop/SKILL.md` checks in full.
 
 ---
 
+## Step 4 — Peer Review
+
+Check the Executive Summary, Key Findings, and Analysis sections for:
+
+- Conclusions in the Executive Summary that lack corresponding supporting evidence in the Findings or Evidence Map
+- Confidence levels not calibrated to source count and independence: High requires multiple independent sources; Medium requires one credible source; Low applies to single uncertain sources or strong inferential leaps
+- Central findings that present a single explanation for a contested or multi-causal phenomenon without acknowledging alternatives exist
+- Competing hypotheses dismissed without reasoning or evidence
+- Missing cross-references to related completed items where the connection is material to the conclusion
+
+Apply `peer-reviewer/SKILL.md` checks in full.
+
+---
+
 ## Output Format
 
 Produce the report in this exact format:
@@ -102,12 +116,19 @@ speculation-control: PASS | FAIL
   VIOLATION: <specific violation with section reference or quote>
 remove-ai-slop: PASS | FAIL
   VIOLATION: <specific violation with section reference or quote>
+peer-reviewer: PASS | FAIL
+  logical-coherence-and-evidence-sufficiency: PASS | FAIL
+    VIOLATION: <specific violation with section reference or quote>
+  alternative-explanations: PASS | FAIL
+    VIOLATION: <specific violation with section reference or quote>
+  cross-item-integration: PASS | FAIL
+    VIOLATION: <specific violation with section reference or quote>
 OVERALL: PASS | FAIL
 ```
 
 Rules:
 - Use `PASS` if no violations are found for a skill; use `FAIL` if any violations are found
 - Each violation on its own line, indented two spaces, prefixed `VIOLATION: `
-- `OVERALL: PASS` only if all three skills passed; otherwise `OVERALL: FAIL`
+- `OVERALL: PASS` only if all four skills passed; otherwise `OVERALL: FAIL`
 - If a required companion skill file is missing, write `SKILL_FILE_MISSING` as the result and treat it as `PASS` for the overall calculation
 - If the item is a stub (Findings not yet populated), write `ITEM_INCOMPLETE` and do not audit

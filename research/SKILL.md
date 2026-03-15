@@ -258,7 +258,7 @@ Stop only when:
 
 ## 8. Output Finalisation
 
-Before marking output complete, run all three companion skill pre-output checks in order. Do not output until all three pass.
+Before marking output complete, run all four companion skill pre-output checks in order. Do not output until all four pass.
 
 ### 8.1 Citation-discipline pre-output checklist
 
@@ -287,3 +287,11 @@ Apply the mandatory pre-commit scan from `remove-ai-slop/SKILL.md`. All five che
 3. **Near-verbatim repetition** — no claim restated in substance across multiple sections with only surface word substitution
 4. **Over-explained causality** — no narration of the obvious ("directly supporting the claim", "which demonstrates the point"); let evidence speak
 5. **Repeated sentence-opening pattern** — no three or more consecutive paragraphs opening with the same syntactic structure
+
+### 8.4 Peer-review pre-output check
+
+Apply the checks from `peer-reviewer/SKILL.md`. All three checks must pass:
+
+1. **Logical coherence and evidence sufficiency** — every conclusion in the Executive Summary is traceable to evidence in the Findings or Evidence Map; confidence levels are calibrated to source count and independence per the Confidence Calibration table above (High = multiple independent sources, Medium = one credible source, Low = single or uncertain source / strong inferential leap)
+2. **Alternative explanations** — at least one major competing hypothesis or alternative interpretation is addressed for any contested or multi-causal finding; alternatives are either integrated or excluded with stated reasoning
+3. **Cross-item integration** — any conclusion that depends on, contradicts, or extends a related completed item includes a cross-reference to that item

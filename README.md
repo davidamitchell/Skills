@@ -13,10 +13,11 @@ a specific task to a high standard. Skills are format-compatible with the
 | [citation-discipline](citation-discipline/SKILL.md) | Binds every factual claim to a verifiable source at the point of assertion; enforces citation placement, source quality, and precision |
 | [code-review](code-review/SKILL.md) | Systematic multi-dimensional code review covering correctness, security, performance, and maintainability; produces prioritised, actionable findings |
 | [feedback](feedback/SKILL.md) | Structured, evidence-grounded critique of written work, arguments, decisions, or plans; findings are specific, prioritised, and paired with concrete recommendations |
+| [peer-reviewer](peer-reviewer/SKILL.md) | Checks a completed research item for logical coherence, alternative explanations, and cross-item integration; audit-only, never edits |
 | [plain-language](plain-language/SKILL.md) | Rewrites complex or technical text so a non-expert reader can understand it without losing accuracy or completeness |
 | [research](research/SKILL.md) | Rigorous, evidence-driven research using recursive decomposition and verification loops |
 | [research-question](research-question/SKILL.md) | Validates and scopes a research question before investigation begins; checks specificity, answerability, scope, motivation, and decomposability |
-| [research-reviewer](research-reviewer/SKILL.md) | Audits a completed research item for citation discipline, speculation control, and writing quality; audit-only, never edits |
+| [research-reviewer](research-reviewer/SKILL.md) | Audits a completed research item for citation discipline, speculation control, writing quality, and logical coherence; audit-only, never edits |
 | [speculation-control](speculation-control/SKILL.md) | Enforces strict separation between evidence-based statements and speculative, interpretive, or subjective content |
 | [strategy-author](strategy-author/SKILL.md) | High-rigour strategy documents grounded in Rumelt and Porter frameworks |
 | [remove-ai-slop](remove-ai-slop/SKILL.md) | Eliminates AI detection signals from text — statistical, structural, and alignment artifacts |
@@ -77,6 +78,8 @@ Skills/
 ├── code-review/
 │   └── SKILL.md
 ├── feedback/
+│   └── SKILL.md
+├── peer-reviewer/
 │   └── SKILL.md
 ├── plain-language/
 │   └── SKILL.md

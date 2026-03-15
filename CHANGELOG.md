@@ -6,11 +6,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- `peer-reviewer/SKILL.md` — audit-only peer review skill for completed research items; checks logical coherence (Executive Summary conclusions supported by evidence), alternative explanations (competing hypotheses addressed or excluded), and cross-item integration (confidence levels calibrated to evidence; cross-references to related items where material)
 - `research-question/SKILL.md` — pre-flight skill for validating and scoping a research question before investigation begins
 - `research-reviewer/SKILL.md` — audit-only review skill for completed research items; checks citation discipline, speculation control, and writing quality
 - `README.md`: added implementation-agnostic constraint to skill quality checklist and contributing section
 
 ### Changed
+
+- `research-reviewer/SKILL.md`: added Step 4 — Peer Review, applying `peer-reviewer/SKILL.md` checks
+- `research-reviewer/SKILL.md`: updated output format to include per-check sub-results (logical-coherence-and-evidence-sufficiency, alternative-explanations, cross-item-integration) under `peer-reviewer:`
+- `research-reviewer/SKILL.md`: confidence calibration criteria now explicit (High/Medium/Low) in Step 4 summary; updated composability note, scope note, `OVERALL` rule, and description to reflect all four skills
+- `research/SKILL.md`: added §8.4 Peer-review pre-output check; confidence calibration criteria reference the Confidence Calibration table with explicit High/Medium/Low criteria; Section 8 preamble updated to reference all four pre-output checks
+- `README.md`: added `peer-reviewer` to the skills index table and repository structure tree; updated `research-reviewer` description
 
 - `citation-discipline/SKILL.md`: added Mandatory Pre-Output Checklist (acronym scan, citation URL/DOI check, web-search-synthesis prohibition, primary-source requirement, scope-match check, epistemic label audit); added Epistemic Label Boundary definition for `[fact]` vs `[inference]`; added two new failure modes: "Citing a scoped or secondary source for a claim about a different scope" and "Listing a citation by name or description only, without a URL or DOI".
 - `speculation-control/SKILL.md`: added Mandatory Pre-Output Scan (evaluative/comparative terms scan and causal claims scan); added two new failure modes: "Evaluative or comparative judgment presented as a conclusion without a label" and "Causal claim stated as established fact without a primary source asserting the causal relationship".
