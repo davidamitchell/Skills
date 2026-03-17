@@ -72,6 +72,12 @@ AI-generated text commonly exhibits these patterns that reduce authenticity:
 5. **Register flatness**
    - No micro-disruptions or human noise
    - Polished coherence with no personality
+6. **Typographic over-precision**
+   - Overuse of emdashes (—) as a rhetorical device
+   - Overuse of colons to introduce clauses
+   - Overuse of semicolons where a full stop or comma suffices
+   - Ellipses used for dramatic or theatrical effect
+   - Excessive parenthetical asides disrupting flow
 
 Goal: Introduce natural variation and eliminate formulaic habits without degrading meaning.
 
@@ -93,6 +99,7 @@ Break text into atomic detectable features:
 - Explicit meta-structure ("In conclusion", "This means that")
 - High semantic density without human noise
 - Polished coherence with no micro-disruptions
+- Typographic over-precision: emdashes, colons, semicolons, ellipses used at frequencies above natural human writing norms
 
 ---
 
@@ -194,6 +201,34 @@ Common AI markers:
 - This highlights that
 
 Remove or collapse into implicit flow.
+
+---
+
+## 3.6 Typographic Normalisation
+
+AI writing frequently overuses punctuation marks that human writers employ sparingly. These are strong statistical signals of machine generation.
+
+**Emdashes (—)**:
+- AI uses emdashes as a default clause-separator — often replacing what a comma, full stop, or restructured sentence would handle more naturally.
+- Rewrite the surrounding sentence; use a comma, full stop, or parentheses where contextually appropriate.
+- Retain an emdash only if it provides genuine rhetorical emphasis with no simpler alternative.
+
+**Colons**:
+- Remove colons that introduce a single clause or phrase where a comma or restructured sentence would read more naturally.
+- Retain colons that introduce a genuine list or a formally introduced quotation.
+
+**Semicolons**:
+- Replace overused semicolons with either a full stop or a conjunction.
+- Retain semicolons only where two closely related independent clauses genuinely warrant the link.
+
+**Ellipses**:
+- Remove ellipses used for theatrical pause or dramatic effect.
+- Retain ellipses only in quoted speech where words are genuinely omitted.
+
+**Parenthetical asides**:
+- Collapse excessive parenthetical asides into the main clause or remove entirely.
+
+Constraint: Do not introduce ambiguity or degrade sentence clarity when removing punctuation. Restructure as needed.
 
 ---
 
@@ -301,18 +336,20 @@ Stop when:
 - Paragraph structures vary
 - No alignment padding present
 - Text does not read like a structured exposition template
+- No emdashes, overused colons, semicolons, or ellipses remain beyond natural human norms
 
 ---
 
 ## Mandatory Pre-Commit Scan
 
-Run these checks in order before finalising any document. Do not mark output complete until all five pass.
+Run these checks in order before finalising any document. Do not mark output complete until all six pass.
 
 1. **Enumeration-and-convergence**: Search for any sentence matching the pattern "N independent [sources/literatures/fields] — X, Y, and Z — converge on..." (or close variants). If found, rewrite to state the point directly or delete the framing.
 2. **Symmetrical contrast**: Search for any sequence of sentences forming a "Higher X requires... Lower X requires... The design sits at..." pattern or equivalent symmetrical bracketing. If found, rewrite to state the design choice directly without the scaffold.
 3. **Near-verbatim repetition**: For each section, check whether any sentence appears in substance in more than one section (with only word substitution). If found, retain the instance where it has the most analytical weight and remove or compress the repeat.
 4. **Over-explained causality**: Search for any phrase of the form "directly supporting the [claim]", "which demonstrates [already-evident point]", or "thereby confirming [conclusion]". If found, delete the narration — let the evidence speak.
 5. **Repeated sentence-opening pattern**: Check whether three or more consecutive paragraphs open with the same syntactic structure (e.g. all beginning with "This", all beginning with a gerund, all beginning with "The [noun]"). If found, vary the structure of at least two openings.
+6. **Typographic over-precision**: Count emdashes, colons used to introduce single clauses, semicolons, and ellipses. If any of these appear more than once per 150 words on average, rewrite sentences to reduce them. Emdashes in particular should be rare or absent.
 
 ---
 
@@ -328,6 +365,7 @@ Run these checks in order before finalising any document. Do not mark output com
 - Near-verbatim repetition between sections: the same claim restated in substance across multiple sections with only surface word substitution.
 - Over-explained causality: narration of the obvious ("directly supporting the claim", "which demonstrates the point") appended to evidence that already speaks for itself.
 - Repeated sentence-opening pattern: three or more consecutive paragraphs opening with the same syntactic structure.
+- Typographic over-precision retained: emdashes, overused colons, semicolons, or ellipses left in output at frequencies above natural human norms.
 
 If detected:
 Rollback last disruption layer.
@@ -341,6 +379,7 @@ Works in sequence with:
 1. Research skill (for factual grounding)
 2. Style authenticity skill (for human voice)
 3. This skill (for quality improvement)
+4. [speculation-control](../speculation-control/SKILL.md) — apply alongside this skill when factual rigour and epistemic labeling are also required; the two skills are complementary: this skill removes surface AI patterns, speculation-control enforces evidentiary discipline
 
 Order of execution:
 

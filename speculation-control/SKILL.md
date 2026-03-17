@@ -111,3 +111,11 @@ Run these steps in order before outputting any document. Do not mark output as c
 - Overconfident language unsupported by evidence
 - Evaluative or comparative judgment ("the right design", "the best available option", "superior to all alternatives") presented as a conclusion without an `Opinion:`, `[inference]`, or `[assumption]` label.
 - Causal claim ("X causes Y", "Y degrades whenever X", "X is a manifestation of Y") stated as an established fact without a primary source directly asserting the causal relationship.
+
+---
+
+## Integration
+
+Works alongside:
+
+- [remove-ai-slop](../remove-ai-slop/SKILL.md) — apply when output also requires surface-level AI pattern removal; run slop removal after epistemic labeling is complete so that structural cleanup does not disturb label placement
