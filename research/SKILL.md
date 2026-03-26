@@ -163,6 +163,8 @@ Every source in the evidence map must carry one of two marks:
 
 Never mark a source `[x]` unless it was actually read and its claim explicitly extracted. List all `[ ]` sources in a separate "Identified but not consulted" section in the evidence map. Do not cite an unconsulted source as evidence for any claim.
 
+**Every source entry must include a URL** — use `[Display Name](https://url)` or a bare `https://url`. Sources listed as plain text without a link are incomplete; the published site cannot render them as clickable links and claims cannot be independently verified. If a source is a book or paywalled paper, link to the best available public reference (DOI, publisher page, arXiv, Google Scholar, or WorldCat).
+
 ---
 
 ## 3. Reasoning Discipline
@@ -266,6 +268,7 @@ Apply the full pre-output checklist from `citation-discipline/SKILL.md`:
 
 - **Acronym scan** — every acronym and initialism expanded on first use
 - **Citation check** — every factual claim has a URL or DOI; no bare assertions
+- **Source URL check** — every source entry in the evidence map and `## Sources` section includes a URL; plain-text source entries without a link are incomplete
 - **Web-search-synthesis prohibition** — no claim attributed to "multiple sources" without naming each source explicitly
 - **Primary-source requirement** — secondary sources traced to their primary source where accessible
 - **Scope-match check** — no source cited for a claim outside its stated scope
