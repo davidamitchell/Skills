@@ -9,6 +9,7 @@ a specific task to a high standard. Skills are format-compatible with the
 
 | Skill | Description |
 |---|---|
+| [adr](adr/SKILL.md) | Creates and maintains Architecture Decision Records; captures context, decision, consequences, and alternatives for significant architectural choices |
 | [backlog-manager](backlog-manager/SKILL.md) | Command-driven outcome-focused backlog in a single file; add, refine, and track work items by observable result |
 | [citation-discipline](citation-discipline/SKILL.md) | Binds every factual claim to a verifiable source at the point of assertion; enforces citation placement, source quality, and precision |
 | [code-review](code-review/SKILL.md) | Systematic multi-dimensional code review covering correctness, security, performance, and maintainability; produces prioritised, actionable findings |
@@ -71,6 +72,8 @@ Skills/
 ├── PROGRESS.md                        # Session-by-session build journal
 ├── decisions/                         # Architecture Decision Records
 │   └── 0001-adopt-skill-md-standard.md
+├── adr/
+│   └── SKILL.md
 ├── backlog-manager/
 │   └── SKILL.md
 ├── citation-discipline/
