@@ -6,6 +6,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- `adr/SKILL.md` — skill for creating and maintaining Architecture Decision Records; captures context, decision, consequences, and alternatives in a standardised format with front matter, coded bullet identifiers, quality checklist, and failure modes
 - `peer-reviewer/SKILL.md` — audit-only peer review skill for completed research items; checks logical coherence (Executive Summary conclusions supported by evidence), alternative explanations (competing hypotheses addressed or excluded), and cross-item integration (confidence levels calibrated to evidence; cross-references to related items where material)
 - `research-question/SKILL.md` — pre-flight skill for validating and scoping a research question before investigation begins
 - `research-reviewer/SKILL.md` — audit-only review skill for completed research items; checks citation discipline, speculation control, and writing quality
