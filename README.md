@@ -25,6 +25,7 @@ a specific task to a high standard. Skills are format-compatible with the
 | [strategic-persuasion](strategic-persuasion/SKILL.md) | Cognitive rhetoric and audience-targeted persuasive content construction |
 | [technical-writer](technical-writer/SKILL.md) | Clear, accurate technical documentation for developers, operators, or end users; covers READMEs, API references, guides, runbooks, and architecture docs |
 | [swe](swe/SKILL.md) | Software engineering grounded in SOLID principles, Fielding's REST constraints, Gang of Four design patterns, and Enterprise Integration Patterns; emphasises planning, design, and iterative improvement |
+| [tdd](tdd/SKILL.md) | Test-driven development using Red-Green-Refactor; enforces test-first discipline, testing pyramid balance, and systematic test design principles for any feature, fix, or behaviour change |
 
 ## Using a skill
 
@@ -102,7 +103,9 @@ Skills/
 │   └── SKILL.md
 ├── technical-writer/
 │   └── SKILL.md
-└── swe/
+├── swe/
+│   └── SKILL.md
+└── tdd/
     └── SKILL.md
 ```
 
