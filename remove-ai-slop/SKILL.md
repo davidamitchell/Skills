@@ -1,33 +1,19 @@
 ---
 name: remove-ai-slop
-version: "1.0"
+version: "2.0"
 description: Removes generic, formulaic patterns from AI-generated text to produce
-  more natural, authentic prose. Targets structural uniformity, predictable transitions,
-  alignment artifacts, and lexical monotony. Use when AI-drafted content feels
-  flat, over-structured, or stilted and needs to read more like thoughtful human
-  writing.
+  more natural, authentic prose. Targets predictable phrases, structural uniformity,
+  false agency, alignment artifacts, and lexical monotony. Use when AI-drafted
+  content feels flat, over-structured, or stilted.
 ---
 
 # Skill: Remove AI Slop
 
-## Purpose
-
-Identify and remove the generic, formulaic patterns that make AI-generated text feel
-impersonal, over-structured, or low-quality. The goal is authentic, high-quality prose —
-not the removal of all AI involvement, but the elimination of the specific habits that
-make AI writing feel like a template output.
-
-This skill operates post-generation and focuses on **structural variety**,
-**lexical authenticity**, and **voice coherence**.  
-Stylistic voice shaping is handled by a separate skill.
-
----
-
 ## When Not to Use
 
-- When the text must meet a formal template or structured format (e.g., legal filings, standardised reports) — structural uniformity may be required
-- When the text is already high-quality and natural — unnecessary passes introduce risk of degradation
-- When the goal is to misrepresent AI-generated work as human-written in contexts where disclosure is required (academic submissions, regulated content, etc.) — this skill is for quality improvement, not deception
+- When the text must meet a formal template or structured format (e.g., legal filings, standardised reports) where structural uniformity is required
+- When the text is already high-quality and natural; unnecessary passes introduce risk of degradation
+- When the goal is to misrepresent AI-generated work as human-written in contexts where disclosure is required (academic submissions, regulated content, etc.)
 
 ---
 
@@ -39,352 +25,370 @@ Stylistic voice shaping is handled by a separate skill.
 2. Are there structural constraints that must be preserved (e.g., headers, lists)?
 3. Is the priority naturalness, concision, or both?
 
-**Output**: Return the revised text with a brief note identifying the main pattern categories addressed. Do not produce a word-by-word annotation unless asked.
+**Output**: Return the revised text with a brief note on the main pattern categories addressed. Do not produce a word-by-word annotation unless asked.
 
 ---
 
 ## Inputs and Outputs
 
-**Input**: AI-generated or AI-assisted text (any length)  
-**Output**: Revised text with generic AI patterns removed; brief summary of changes made  
+**Input**: AI-generated or AI-assisted text (any length)
+**Output**: Revised text with generic AI patterns removed; brief summary of changes made
 **Composability**: Apply after drafting; apply before style shaping or final editorial review
 
 ---
 
-## 0. Quality Indicators
+## Core Rules
 
-AI-generated text commonly exhibits these patterns that reduce authenticity:
+1. **Cut filler phrases.** Remove throat-clearing openers, emphasis crutches, and meta-commentary. See Banned Phrases below.
 
-1. **Predictable token sequences**
-   - Low entropy phrase patterns
-   - Formulaic transitions repeated at scale
-2. **Over-structured layout**
-   - Symmetrical paragraphs of equal length
-   - Compulsive use of headers and bullets where prose would serve better
-3. **Alignment artifacts**
-   - Over-clarity that removes productive ambiguity
-   - Unnecessary framing and meta-commentary
-   - Safe, hedged phrasing that dilutes voice
-4. **Stylometric uniformity**
-   - Consistent sentence length
-   - Predictable transition markers
-   - Hedging density higher than natural writing
-5. **Register flatness**
-   - No micro-disruptions or human noise
-   - Polished coherence with no personality
-6. **Typographic over-precision**
-   - Emdashes (—): forbidden in all output; remove every instance without exception
-   - Overuse of colons to introduce clauses
-   - Overuse of semicolons where a full stop or comma suffices
-   - Ellipses used for dramatic or theatrical effect
-   - Excessive parenthetical asides disrupting flow
+2. **Break formulaic structures.** Avoid binary contrasts ("not X, it's Y"), negative listings, false agency, and rhetorical setups. See Structural Patterns to Avoid below.
 
-Goal: Introduce natural variation and eliminate formulaic habits without degrading meaning.
+3. **Use active voice.** Every sentence needs a subject doing something. Passive constructions hide the actor and drain energy.
+
+4. **Be specific.** Replace vague declaratives ("The implications are significant") with the specific thing. No lazy extremes ("every," "always," "never") doing vague work.
+
+5. **Put the reader in the room.** No narrator-from-a-distance voice. "You" beats "People." Specifics beat abstractions.
+
+6. **Vary rhythm.** Mix sentence lengths. Two items often beat three. End paragraphs differently. No em dashes, ever.
+
+7. **Trust readers.** State facts directly. Skip softening, justification, and hand-holding. Remove politeness scaffolding ("I hope this helps", "Happy to elaborate").
+
+8. **Cut quotables.** If it reads like a pull-quote or a LinkedIn aphorism, rewrite it.
 
 ---
 
-# 1. Signal Decomposition
+## Banned Phrases
 
-## 1.1 Core AI Slop Features
+### Throat-Clearing Openers
 
-Break text into atomic detectable features:
+Remove these before stating the point directly.
 
-- Repetitive clause structure
-- Predictable paragraph architecture
-- Excessive explicit transitions
-- Overly balanced sentence length
-- Uniform syntactic rhythm
-- Hedging density
-- Safety disclaimers
-- Explicit meta-structure ("In conclusion", "This means that")
-- High semantic density without human noise
-- Polished coherence with no micro-disruptions
-- Typographic over-precision: emdashes (strictly forbidden, remove all), colons, semicolons, ellipses used at frequencies above natural human writing norms
+- "Here's the thing:"
+- "Here's what [X]"
+- "It turns out"
+- "The uncomfortable truth is"
+- "The real [X] is"
+- "Let me be clear"
+- "The truth is,"
+- "I'm going to be honest"
+- "Can we talk about"
 
----
+Any "here's what/this/that" construction is throat-clearing. Cut it.
 
-# 2. Recursive Slop Removal Algorithm
+### Emphasis Crutches
 
-function ELIMINATE_SLOP(text):
+These add no meaning. Delete them.
 
-features = IDENTIFY_FEATURES(text)
+- "Full stop." / "Period."
+- "Let that sink in."
+- "This matters because"
+- "Make no mistake"
+- "Here's why that matters"
 
-for each feature in features:
-    text = DISRUPT(feature, text)
+### AI Vocabulary Words
 
-if FEATURES_REMAIN(text):
-    return ELIMINATE_SLOP(text)
-else:
-    return text
+These appear far more often in AI-generated text than in natural writing. Replace or remove.
 
-Stop only when quality-degrading patterns are eliminated.
+- Additionally
+- Crucially / Importantly
+- Delve / Deep dive
+- Enduring / Pivotal / Vital
+- Enhance / Foster / Garner
+- Highlight (as a verb) / Underscore / Showcase
+- Inherently / Fundamentally / Inevitably
+- Interplay / Intricacies / Tapestry
+- Landscape (used abstractly)
+- Testament (as in "a testament to")
+- Vibrant / Groundbreaking / Transformative
 
----
+### Adverbs
 
-# 3. Disruption Strategies
+Kill adverbs by default. No -ly intensifiers or softeners.
 
-## 3.1 Entropy Injection
+Common offenders: really, just, literally, genuinely, honestly, simply, actually, deeply, truly, interestingly, crucially
 
-Increase local unpredictability without degrading clarity.
+Also cut: "At its core", "In today's [X]", "It's worth noting", "At the end of the day", "In a world where", "The reality is"
 
-Methods:
-- Replace common token pairs with less frequent equivalents
-- Insert occasional human-like compression
-- Introduce subtle asymmetry in phrasing
-- Break predictable transition chains
+### Business Jargon
 
-Constraint:
-Do not introduce semantic drift.
+| Avoid | Use instead |
+|-------|-------------|
+| Navigate (challenges) | Handle, address |
+| Landscape (context) | Situation, field |
+| Game-changer | Significant change |
+| Double down | Commit, increase |
+| Moving forward | Next, from now on |
+| On the same page | Agreed |
+| Lean into | Accept, embrace |
 
----
+### Chatbot and Sycophantic Artifacts
 
-## 3.2 Structural Irregularization
+Remove any phrasing that belongs in a chatbot conversation, not in prose.
 
-AI outputs often exhibit:
+- "Great question!"
+- "You're absolutely right"
+- "Of course!" / "Certainly!"
+- "I hope this helps"
+- "Let me know if you'd like me to expand on any section"
+- "Here is an overview of..."
 
-- Symmetrical paragraphs
-- Even sentence lengths
-- Topic sentence → explanation → summary pattern
+### Filler Phrases
 
-Countermeasures:
+Replace with the shorter form.
 
-- Vary paragraph density
-- Remove explicit summarization lines
-- Occasionally omit logical signposting
-- Mix fragment + long-form sentences
-
----
-
-## 3.3 Alignment Artifact Removal
-
-Remove:
-
-- Safety-prefacing language
-- Artificial neutrality padding
-- Over-explained causal links
-- Redundant context framing
-
-Rewrite to:
-
-- Assume reader competence
-- Compress obvious reasoning
-- Remove explicit justification loops
+- "In order to" -> "To"
+- "Due to the fact that" -> "Because"
+- "At this point in time" -> "Now"
+- "It is important to note that" -> remove; state the point
+- "The system has the ability to" -> "The system can"
 
 ---
 
-## 3.4 Stylometric Noise Injection
+## Structural Patterns to Avoid
 
-Humans exhibit:
+### Binary Contrasts
 
-- Minor asymmetries
-- Micro-ambiguities
-- Occasional compression
-- Implicit references
+State the point directly. Drop the negation.
 
-Techniques:
+| Pattern | Problem |
+|---------|---------|
+| "Not because X. Because Y." | Telegraphed reversal |
+| "[X] isn't the problem. [Y] is." | Formulaic reframe |
+| "The answer isn't X. It's Y." | Predictable pivot |
+| "Not X. But Y." | Mechanical contrast |
+| "not just X but also Y" | Additive hedge |
 
-- Replace over-formal constructions
-- Introduce mild syntactic variance
-- Avoid rhetorical symmetry
-- Remove checklist-like formatting unless required
+Instead: state Y. "The problem is Y." Drop the contrast entirely.
 
----
+### Negative Listing
 
-## 3.5 Transition Suppression
+State the thing directly. Skip the buildup.
 
-Common AI markers:
+| Pattern | Problem |
+|---------|---------|
+| "Not a X... Not a Y... A Z." | Dramatic buildup through negation |
+| "It wasn't X. It wasn't Y. It was Z." | Same structure, past tense |
+
+### False Agency
+
+AI avoids naming actors by giving inanimate things human verbs. Find the person and name them.
+
+| Pattern | Fix |
+|---------|-----|
+| "a complaint becomes a fix" | Someone fixed it |
+| "the decision emerges" | Someone decided |
+| "the culture shifts" | People changed behaviour |
+| "the data tells us" | Someone read the data and concluded |
+| "the market rewards" | Buyers pay for things |
+
+### Narrator-from-a-Distance
+
+Put the reader in the room. Use "you" or name the actor.
+
+| Pattern | Problem |
+|---------|---------|
+| "Nobody designed this." | Disembodied observation |
+| "This happens because..." | Lecturer voice |
+| "People tend to..." | Armchair sociologist |
+
+### Passive Voice
+
+Name who did the thing. Passive voice hides actors and drains energy.
+
+| Pattern | Fix |
+|---------|-----|
+| "X was created" | Name who created it |
+| "It is believed that" | Name who believes it |
+| "Mistakes were made" | Name who made them |
+
+### Sentence Starters to Avoid
+
+| Pattern | Fix |
+|---------|-----|
+| Sentences starting with What, When, Where, Which, Who, Why, How | Restructure; lead with the subject |
+| Paragraphs starting with "So" | Start with the content |
+| Sentences starting with "Look," | Remove |
+| Three or more consecutive paragraphs starting with the same word | Vary the structure |
+
+### Formulaic Transitions
+
+Remove or collapse into implicit flow.
 
 - Furthermore
 - Additionally
 - In conclusion
 - It is important to note
 - This highlights that
+- This demonstrates that
+- Notably
 
-Remove or collapse into implicit flow.
+### Rule of Three
 
----
+AI forces ideas into groups of three. Use two items, or one, or as many as the content genuinely requires.
 
-## 3.6 Typographic Normalisation
+Before: "The event features keynote sessions, panel discussions, and networking opportunities."
+After: "The event has talks, panels, and informal networking."
 
-AI writing frequently overuses punctuation marks that human writers employ sparingly. These are strong statistical signals of machine generation.
+Better: "The event has talks and panels, with time between sessions for informal conversation."
 
-**Emdashes (—)**:
-- Emdashes are forbidden. Remove every instance without exception.
-- Rewrite the surrounding sentence using a comma, full stop, parentheses, or a restructured clause.
-- There is no case in which an emdash should be retained.
+### Rhetorical Setups
 
-**Colons**:
-- Remove colons that introduce a single clause or phrase where a comma or restructured sentence would read more naturally.
-- Retain colons that introduce a genuine list or a formally introduced quotation.
+These announce insight instead of delivering it.
 
-**Semicolons**:
-- Replace overused semicolons with either a full stop or a conjunction.
-- Retain semicolons only where two closely related independent clauses genuinely warrant the link.
+- "What if [reframe]?" (followed immediately by the answer)
+- "Here's what I mean:" (redundant preview)
+- "Think about it:" (condescending prompt)
+- "And that's okay." (unnecessary permission)
 
-**Ellipses**:
-- Remove ellipses used for theatrical pause or dramatic effect.
-- Retain ellipses only in quoted speech where words are genuinely omitted.
+### Dramatic Fragmentation
 
-**Parenthetical asides**:
-- Collapse excessive parenthetical asides into the main clause or remove entirely.
+Sentence fragments for emphasis read as manufactured profundity.
 
-Constraint: Do not introduce ambiguity or degrade sentence clarity when removing punctuation. Restructure as needed.
+- "[Noun]. That's it. That's the [thing]." (performative simplicity)
+- "X. And Y. And Z." (staccato drama)
 
----
-
-# 4. Quality Improvement by Pattern Category
-
-## 4.1 Lexical Monotony
-
-Improve:
-- Increase lexical diversity
-- Replace high-frequency phrase templates with more precise alternatives
-- Avoid structural repetition across paragraphs
-- Vary sentence openings
+Use complete sentences. Trust the content.
 
 ---
 
-## 4.2 Tone and Register Flatness
+## Style Rules
 
-Improve:
-- Break overly neutral, impersonal tone where voice is appropriate
-- Reduce politeness scaffolding ("I hope this helps", "Happy to elaborate")
-- Remove instructional cadence where it is not needed
-- Vary explanation depth to match argument weight
+### Em Dashes
 
----
+Em dashes are forbidden. Remove every instance without exception. Rewrite using a comma, full stop, parentheses, or a restructured clause. There is no case in which an em dash should be retained.
 
-## 4.3 Over-Polished Flow
+Before: "The term is primarily promoted by Dutch institutions -- not by the people themselves -- yet this continues in official documents."
+After: "The term is primarily promoted by Dutch institutions, not by the people themselves, yet it continues in official documents."
 
-Improve:
-- Vary sentence construction to reflect natural thought
-- Remove overly optimized, frictionless transitions
-- Reintroduce productive specificity in places where over-smoothing removed it
+### Colons
 
----
+Remove colons that introduce a single clause or phrase where a comma or restructured sentence would read more naturally. Retain colons that introduce a genuine list or a formally introduced quotation.
 
-# 5. Multi-Pass Refinement Loop
+### Semicolons
 
-loop until quality_threshold met:
+Replace overused semicolons with a full stop or a conjunction. Retain semicolons only where two closely related independent clauses genuinely warrant the link.
 
-run structural audit
-run lexical diversity audit
-run alignment artifact audit
-run repetition scan
+### Ellipses
 
-revise
+Remove ellipses used for theatrical pause or dramatic effect. Retain only in quoted speech where words are genuinely omitted.
 
-Threshold defined by:
+### Boldface
 
-- Structural variety achieved
-- No repeated syntactic openings
-- No visible rhetorical scaffolding
-- No checklist-like cadence where prose is more appropriate
+Remove bold from mid-sentence phrases used for emphasis. Retain bold only for terms being defined, UI labels, or technical identifiers where a reader might scan for them.
 
----
+Before: "The team used **OKRs**, **KPIs**, and the **Balanced Scorecard**."
+After: "The team used OKRs, KPIs, and the Balanced Scorecard."
 
-# 6. Tooling Layer
+### Inline-Header Lists
 
-Optional automation stack:
+AI outputs bullet lists where each item opens with a bolded header. Convert to prose where the content allows.
 
-1. N-gram frequency scanner
-2. Sentence length variance analyzer
-3. Transition phrase blacklist filter
-4. Hedging density counter
-5. Perplexity estimator (local LLM proxy)
-6. Classifier probe (if available)
+Before:
+- **Performance:** Performance improved with optimized algorithms.
+- **Security:** Security was strengthened with end-to-end encryption.
 
-Pipeline:
+After: The update speeds up load times and adds end-to-end encryption.
 
-Generate → Audit → Disrupt → Audit → Final Review
+### Significance Inflation
+
+Remove phrasing that inflates importance without adding information.
+
+Words to watch: "stands as", "serves as a testament to", "marking a pivotal moment", "underscores its importance", "reflects broader", "setting the stage for", "represents a shift", "evolving landscape", "indelible mark"
+
+Before: "The Statistical Institute was established in 1989, marking a pivotal moment in the evolution of regional statistics."
+After: "The Statistical Institute was established in 1989 to collect and publish regional statistics independently."
 
 ---
 
-# 7. Human Noise Calibration
+## Personality and Soul
 
-After revision:
+Removing slop is only half the job. Clean, voiceless writing is still flat. Good writing has a person behind it.
 
-- Ensure coherence preserved
-- Ensure no artificial awkwardness
-- Ensure semantic integrity
+Signs of soulless writing even after slop removal:
 
-Quality requires:
-Natural variance without visible manipulation.
+- Every sentence is the same length and structure
+- No opinions, just neutral reporting
+- No acknowledgment of uncertainty or mixed feelings
+- Reads like a press release
 
----
+How to add voice:
 
-# 8. Consistency Check
-
-function CONSISTENCY_CHECK(text):
-
-assert no logical contradictions
-assert no semantic drift
-assert tone stable
-assert argument intact
-
-If failed:
-Trace modification step and correct.
+- Have opinions. React to facts, not just report them.
+- Vary rhythm. Short punchy sentences. Then longer ones that take their time.
+- Acknowledge complexity. "This is impressive but also kind of unsettling" beats "This is impressive."
+- Use "I" when it fits. First person is honest, not unprofessional.
+- Be specific about feelings. Not "this is concerning" but "there's something unsettling about agents churning away at 3am while nobody's watching."
 
 ---
 
-# 9. Stopping Conditions
+## Scoring
 
-Stop when:
+Rate 1-10 on each dimension:
 
-- No formulaic transitions remain
-- Sentence length varies naturally
-- Paragraph structures vary
-- No alignment padding present
-- Text does not read like a structured exposition template
-- No emdashes remain (zero tolerance; any emdash is an automatic failure), overused colons, semicolons, or ellipses remain beyond natural human norms
+| Dimension | Question |
+|-----------|----------|
+| Directness | Statements or announcements? |
+| Rhythm | Varied or metronomic? |
+| Trust | Respects reader intelligence? |
+| Authenticity | Sounds human? |
+| Density | Anything cuttable? |
 
----
-
-## Mandatory Pre-Commit Scan
-
-Run these checks in order before finalising any document. Do not mark output complete until all six pass.
-
-1. **Enumeration-and-convergence**: Search for any sentence matching the pattern "N independent [sources/literatures/fields] — X, Y, and Z — converge on..." (or close variants). If found, rewrite to state the point directly or delete the framing.
-2. **Symmetrical contrast**: Search for any sequence of sentences forming a "Higher X requires... Lower X requires... The design sits at..." pattern or equivalent symmetrical bracketing. If found, rewrite to state the design choice directly without the scaffold.
-3. **Near-verbatim repetition**: For each section, check whether any sentence appears in substance in more than one section (with only word substitution). If found, retain the instance where it has the most analytical weight and remove or compress the repeat.
-4. **Over-explained causality**: Search for any phrase of the form "directly supporting the [claim]", "which demonstrates [already-evident point]", or "thereby confirming [conclusion]". If found, delete the narration — let the evidence speak.
-5. **Repeated sentence-opening pattern**: Check whether three or more consecutive paragraphs open with the same syntactic structure (e.g. all beginning with "This", all beginning with a gerund, all beginning with "The [noun]"). If found, vary the structure of at least two openings.
-6. **Typographic over-precision**: Scan for any emdash (—) in the output. Any emdash found is an automatic failure — rewrite the sentence without it. Then count colons used to introduce single clauses, semicolons, and ellipses; if any of these appear more than once per 150 words on average, rewrite sentences to reduce them.
+Below 35/50: revise.
 
 ---
 
-# 10. Failure Modes
+## Pre-Commit Checklist
 
-- Over-randomization
-- Meaning drift
-- Artificial awkwardness
-- Stylistic degradation
-- Loss of clarity
-- Enumeration-and-convergence framing: "N independent [sources/literatures/fields] — X, Y, and Z — converge on..." used to open or close a section.
-- Symmetrical contrast scaffold: "Higher X requires... Lower X requires... The design sits at..." or equivalent symmetrical framing used in place of a direct statement.
-- Near-verbatim repetition between sections: the same claim restated in substance across multiple sections with only surface word substitution.
-- Over-explained causality: narration of the obvious ("directly supporting the claim", "which demonstrates the point") appended to evidence that already speaks for itself.
-- Repeated sentence-opening pattern: three or more consecutive paragraphs opening with the same syntactic structure.
-- Typographic over-precision retained: any emdash present in output (zero tolerance), or overused colons, semicolons, or ellipses left in output at frequencies above natural human norms.
+Run these checks before finalising any document. Do not mark output complete until all pass.
 
-If detected:
-Rollback last disruption layer.
+- [ ] Any adverbs? Remove them.
+- [ ] Any passive voice? Find the actor. Make them the subject.
+- [ ] Any em dashes? Remove every one. Automatic failure if any remain.
+- [ ] Any AI vocabulary words (delve, landscape, testament, pivotal, etc.)? Replace or cut.
+- [ ] Any throat-clearing openers? Cut to the point.
+- [ ] Any binary contrasts ("not X, it's Y")? State Y directly.
+- [ ] Any inanimate thing doing a human verb ("the decision emerges")? Name the person.
+- [ ] Any Wh- sentence starters (What, When, Where, Who, Why, How)? Restructure.
+- [ ] Any sycophantic or chatbot artifacts? Remove entirely.
+- [ ] Three or more consecutive sentences of the same length? Break one.
+- [ ] Paragraph ends with a punchy one-liner? Vary it.
+- [ ] Any vague declaratives ("The implications are significant")? Name the specific implication.
+- [ ] Any colons, semicolons, or ellipses appearing more than once per 150 words on average? Reduce them.
+- [ ] Any near-verbatim repetition between sections? Retain the best instance and cut the rest.
+- [ ] Three or more consecutive paragraphs opening with the same syntactic structure? Vary at least two.
+
+After the checklist: read the text aloud. If any sentence sounds like it came from a template, rewrite it.
 
 ---
 
-# 11. Integration
+## Final Audit Pass
+
+After revision, ask: "What still makes this obviously AI-generated?"
+
+Answer briefly with any remaining tells. Then revise to address them.
+
+---
+
+## Failure Modes
+
+- Replacing one pattern with another AI pattern
+- Meaning drift from over-editing
+- Artificial awkwardness from forced variation
+- Clean but soulless output with no personality
+- Significant inflation removed but specificity not added
+- Passive voice removed but no actor named
+
+---
+
+## Integration
 
 Works in sequence with:
 
 1. Research skill (for factual grounding)
-2. Style authenticity skill (for human voice)
-3. This skill (for quality improvement)
-4. [speculation-control](../speculation-control/SKILL.md) — apply alongside this skill when factual rigour and epistemic labeling are also required; the two skills are complementary: this skill removes surface AI patterns, speculation-control enforces evidentiary discipline
+2. This skill (for pattern removal)
+3. Style authenticity skill (for human voice)
+4. [speculation-control](../speculation-control/SKILL.md): apply alongside this skill when factual rigour and epistemic labeling are also required; this skill removes surface patterns, speculation-control enforces evidentiary discipline
 
 Order of execution:
 
-Research → Draft → Slop Removal → Style Layer → Final Audit
-
----
-
-End of File
+Research -> Draft -> Slop Removal -> Style Layer -> Final Audit
