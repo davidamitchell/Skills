@@ -6,6 +6,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- `skill-author/SKILL.md` — new skill for authoring SKILL.md files; covers a pre-draft related-skill scan (duplication, overlap, composition, and description-ambiguity checks), the required SKILL.md structure, a quality checklist, and a post-draft audit of related skills for cross-references; ensures every new skill is library-aware before it is committed
 - `inline-citation/SKILL.md` — new skill for the APA-inspired inline linked citation format for web content; covers the `<a href="URL">Author (Year)</a>` canonical form, placement rules, author naming, year handling (including `n.d.`), multiple-citation separation, link requirements, optional reference list, edge-case table, anti-patterns, and a mandatory pre-output checklist
 - `tdd/SKILL.md` — test-driven development skill enforcing Red-Green-Refactor discipline, testing pyramid balance (unit / integration / system), systematic test design principles from Meyer's testing research (oracles, partition testing, test independence, mutation sensitivity, non-redundancy), and a verification checklist
 - `adr/SKILL.md` — skill for creating and maintaining Architecture Decision Records; captures context, decision, consequences, and alternatives in a standardised format with front matter, coded bullet identifiers, quality checklist, and failure modes

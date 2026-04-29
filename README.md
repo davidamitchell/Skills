@@ -25,6 +25,7 @@ a specific task to a high standard. Skills are format-compatible with the
 | [remove-ai-slop](remove-ai-slop/SKILL.md) | Eliminates AI detection signals from text — statistical, structural, and alignment artifacts |
 | [strategic-persuasion](strategic-persuasion/SKILL.md) | Cognitive rhetoric and audience-targeted persuasive content construction |
 | [technical-writer](technical-writer/SKILL.md) | Clear, accurate technical documentation for developers, operators, or end users; covers READMEs, API references, guides, runbooks, and architecture docs |
+| [skill-author](skill-author/SKILL.md) | Authors a new SKILL.md file; scans existing skills for duplication and interoperability before drafting, then audits related skills for cross-references after drafting |
 | [swe](swe/SKILL.md) | Software engineering grounded in SOLID principles, Fielding's REST constraints, Gang of Four design patterns, and Enterprise Integration Patterns; emphasises planning, design, and iterative improvement |
 | [tdd](tdd/SKILL.md) | Test-driven development using Red-Green-Refactor; enforces test-first discipline, testing pyramid balance, and systematic test design principles for any feature, fix, or behaviour change |
 
@@ -106,6 +107,8 @@ Skills/
 │   └── SKILL.md
 ├── technical-writer/
 │   └── SKILL.md
+├── skill-author/
+│   └── SKILL.md
 ├── swe/
 │   └── SKILL.md
 └── tdd/
@@ -114,8 +117,13 @@ Skills/
 
 ## Creating a new skill
 
-1. Create a directory: `mkdir my-skill`
-2. Create `SKILL.md` with YAML frontmatter and a markdown body:
+Use the [`skill-author`](skill-author/SKILL.md) skill to guide the full authoring process — it covers the pre-draft related-skill scan, the required file structure, the quality checklist, and the post-draft audit of related skills for cross-references.
+
+For a quick reference, the steps are:
+
+1. Scan existing skills for overlap, duplication, and composition opportunities (see `skill-author` Step 1).
+2. Create a directory: `mkdir my-skill`
+3. Create `SKILL.md` with YAML frontmatter and a markdown body:
 
 ```yaml
 ---
@@ -127,7 +135,9 @@ description: What this skill does and when to use it. Tools that support
 # Skill instructions here...
 ```
 
-3. Test by pasting the content into any AI assistant with a relevant prompt.
+4. Run the quality checklist in `skill-author` Step 3 before committing.
+5. Audit related skills for required cross-references after the new skill passes (see `skill-author` Step 4).
+6. Test by pasting the content into any AI assistant with a relevant prompt.
 
 See the [Agent Skills open standard](https://agentskills.io) for the full specification.
 
