@@ -14,6 +14,7 @@ a specific task to a high standard. Skills are format-compatible with the
 | [citation-discipline](citation-discipline/SKILL.md) | Binds every factual claim to a verifiable source at the point of assertion; enforces citation placement, source quality, and precision |
 | [code-review](code-review/SKILL.md) | Systematic multi-dimensional code review covering correctness, security, performance, and maintainability; produces prioritised, actionable findings |
 | [feedback](feedback/SKILL.md) | Structured, evidence-grounded critique of written work, arguments, decisions, or plans; findings are specific, prioritised, and paired with concrete recommendations |
+| [inline-citation](inline-citation/SKILL.md) | Formats hyperlinked inline citations as Author (Year) anchors placed immediately after the claim they support; covers placement, author naming, year, multiple citations, link requirements, and anti-patterns for web-published content |
 | [peer-reviewer](peer-reviewer/SKILL.md) | Checks a completed research item for logical coherence, alternative explanations, and cross-item integration; audit-only, never edits |
 | [plain-language](plain-language/SKILL.md) | Rewrites complex or technical text so a non-expert reader can understand it without losing accuracy or completeness |
 | [research](research/SKILL.md) | Rigorous, evidence-driven research using recursive decomposition and verification loops |
@@ -24,6 +25,7 @@ a specific task to a high standard. Skills are format-compatible with the
 | [remove-ai-slop](remove-ai-slop/SKILL.md) | Eliminates AI detection signals from text — statistical, structural, and alignment artifacts |
 | [strategic-persuasion](strategic-persuasion/SKILL.md) | Cognitive rhetoric and audience-targeted persuasive content construction |
 | [technical-writer](technical-writer/SKILL.md) | Clear, accurate technical documentation for developers, operators, or end users; covers READMEs, API references, guides, runbooks, and architecture docs |
+| [skill-author](skill-author/SKILL.md) | Authors a new SKILL.md file; scans existing skills for duplication and interoperability before drafting, then audits related skills for cross-references after drafting |
 | [swe](swe/SKILL.md) | Software engineering grounded in SOLID principles, Fielding's REST constraints, Gang of Four design patterns, and Enterprise Integration Patterns; emphasises planning, design, and iterative improvement |
 | [tdd](tdd/SKILL.md) | Test-driven development using Red-Green-Refactor; enforces test-first discipline, testing pyramid balance, and systematic test design principles for any feature, fix, or behaviour change |
 
@@ -83,6 +85,8 @@ Skills/
 │   └── SKILL.md
 ├── feedback/
 │   └── SKILL.md
+├── inline-citation/
+│   └── SKILL.md
 ├── peer-reviewer/
 │   └── SKILL.md
 ├── plain-language/
@@ -103,6 +107,8 @@ Skills/
 │   └── SKILL.md
 ├── technical-writer/
 │   └── SKILL.md
+├── skill-author/
+│   └── SKILL.md
 ├── swe/
 │   └── SKILL.md
 └── tdd/
@@ -111,8 +117,13 @@ Skills/
 
 ## Creating a new skill
 
-1. Create a directory: `mkdir my-skill`
-2. Create `SKILL.md` with YAML frontmatter and a markdown body:
+Use the [`skill-author`](skill-author/SKILL.md) skill to guide the full authoring process — it covers the pre-draft related-skill scan, the required file structure, the quality checklist, and the post-draft audit of related skills for cross-references.
+
+For a quick reference, the steps are:
+
+1. Scan existing skills for overlap, duplication, and composition opportunities (see `skill-author` Step 1).
+2. Create a directory: `mkdir my-skill`
+3. Create `SKILL.md` with YAML frontmatter and a markdown body:
 
 ```yaml
 ---
@@ -124,7 +135,9 @@ description: What this skill does and when to use it. Tools that support
 # Skill instructions here...
 ```
 
-3. Test by pasting the content into any AI assistant with a relevant prompt.
+4. Run the quality checklist in `skill-author` Step 3 before committing.
+5. Audit related skills for required cross-references after the new skill passes (see `skill-author` Step 4).
+6. Test by pasting the content into any AI assistant with a relevant prompt.
 
 See the [Agent Skills open standard](https://agentskills.io) for the full specification.
 

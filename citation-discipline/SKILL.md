@@ -21,7 +21,7 @@ description: Ensures all factual statements are bound to verifiable sources, cit
 
 **Before starting**, ask if not already clear:
 
-1. What citation style is required (inline, footnote, endnote, or none specified)?
+1. What citation style is required (inline, footnote, endnote, or none specified)? For web content requiring hyperlinked `Author (Year)` anchors, use `inline-citation` alongside this skill.
 2. Are primary sources accessible, or must secondary sources be relied upon?
 3. What is the intended audience's level of familiarity with the subject?
 
@@ -37,7 +37,7 @@ description: Ensures all factual statements are bound to verifiable sources, cit
 
 **Input**: Draft text with factual claims, plus any source materials provided  
 **Output**: Revised text with inline citations; list of flagged unsourced claims  
-**Composability**: Apply after research or strategy-author; use alongside speculation-control for epistemic rigour
+**Composability**: Apply after research or strategy-author; use alongside speculation-control for epistemic rigour; use alongside inline-citation when the output is web content requiring hyperlinked Author (Year) anchors
 
 ---
 

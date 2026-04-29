@@ -6,6 +6,9 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- `.github/copilot-instructions.md` — Copilot custom instructions covering repo conventions, the implementation-agnostic constraint, the four-step skill authoring process (via `skill-author`), and the required supporting file updates (README, CHANGELOG, related-skill audit) for new and edited skills
+- `skill-author/SKILL.md` — new skill for authoring SKILL.md files; covers a pre-draft related-skill scan (duplication, overlap, composition, and description-ambiguity checks), the required SKILL.md structure, a quality checklist, and a post-draft audit of related skills for cross-references; ensures every new skill is library-aware before it is committed
+- `inline-citation/SKILL.md` — new skill for the APA-inspired inline linked citation format for web content; covers the `<a href="URL">Author (Year)</a>` canonical form, placement rules, author naming, year handling (including `n.d.`), multiple-citation separation, link requirements, optional reference list, edge-case table, anti-patterns, and a mandatory pre-output checklist
 - `tdd/SKILL.md` — test-driven development skill enforcing Red-Green-Refactor discipline, testing pyramid balance (unit / integration / system), systematic test design principles from Meyer's testing research (oracles, partition testing, test independence, mutation sensitivity, non-redundancy), and a verification checklist
 - `adr/SKILL.md` — skill for creating and maintaining Architecture Decision Records; captures context, decision, consequences, and alternatives in a standardised format with front matter, coded bullet identifiers, quality checklist, and failure modes
 - `peer-reviewer/SKILL.md` — audit-only peer review skill for completed research items; checks logical coherence (Executive Summary conclusions supported by evidence), alternative explanations (competing hypotheses addressed or excluded), and cross-item integration (confidence levels calibrated to evidence; cross-references to related items where material)
@@ -15,6 +18,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- `citation-discipline/SKILL.md`: updated Interaction Protocol question 1 to point to `inline-citation` for web content requiring hyperlinked `Author (Year)` anchors; updated Composability note to reference `inline-citation` as the format-specific companion for web content
 - `research-reviewer/SKILL.md`: added Step 4 — Peer Review, applying `peer-reviewer/SKILL.md` checks
 - `research-reviewer/SKILL.md`: updated output format to include per-check sub-results (logical-coherence-and-evidence-sufficiency, alternative-explanations, cross-item-integration) under `peer-reviewer:`
 - `research-reviewer/SKILL.md`: confidence calibration criteria now explicit (High/Medium/Low) in Step 4 summary; updated composability note, scope note, `OVERALL` rule, and description to reflect all four skills
