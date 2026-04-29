@@ -16,6 +16,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- `citation-discipline/SKILL.md`: updated Interaction Protocol question 1 to point to `inline-citation` for web content requiring hyperlinked `Author (Year)` anchors; updated Composability note to reference `inline-citation` as the format-specific companion for web content
 - `research-reviewer/SKILL.md`: added Step 4 — Peer Review, applying `peer-reviewer/SKILL.md` checks
 - `research-reviewer/SKILL.md`: updated output format to include per-check sub-results (logical-coherence-and-evidence-sufficiency, alternative-explanations, cross-item-integration) under `peer-reviewer:`
 - `research-reviewer/SKILL.md`: confidence calibration criteria now explicit (High/Medium/Low) in Step 4 summary; updated composability note, scope note, `OVERALL` rule, and description to reflect all four skills
