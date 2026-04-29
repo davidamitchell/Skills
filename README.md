@@ -14,6 +14,7 @@ a specific task to a high standard. Skills are format-compatible with the
 | [citation-discipline](citation-discipline/SKILL.md) | Binds every factual claim to a verifiable source at the point of assertion; enforces citation placement, source quality, and precision |
 | [code-review](code-review/SKILL.md) | Systematic multi-dimensional code review covering correctness, security, performance, and maintainability; produces prioritised, actionable findings |
 | [feedback](feedback/SKILL.md) | Structured, evidence-grounded critique of written work, arguments, decisions, or plans; findings are specific, prioritised, and paired with concrete recommendations |
+| [inline-citation](inline-citation/SKILL.md) | Formats hyperlinked inline citations as Author (Year) anchors placed immediately after the claim they support; covers placement, author naming, year, multiple citations, link requirements, and anti-patterns for web-published content |
 | [peer-reviewer](peer-reviewer/SKILL.md) | Checks a completed research item for logical coherence, alternative explanations, and cross-item integration; audit-only, never edits |
 | [plain-language](plain-language/SKILL.md) | Rewrites complex or technical text so a non-expert reader can understand it without losing accuracy or completeness |
 | [research](research/SKILL.md) | Rigorous, evidence-driven research using recursive decomposition and verification loops |
@@ -82,6 +83,8 @@ Skills/
 ├── code-review/
 │   └── SKILL.md
 ├── feedback/
+│   └── SKILL.md
+├── inline-citation/
 │   └── SKILL.md
 ├── peer-reviewer/
 │   └── SKILL.md
