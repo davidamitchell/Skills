@@ -44,7 +44,7 @@ theoretical_foundations:
 
 **Input**: Problem description, system context, requirements, existing design, or implementation for review  
 **Output**: Designs, implementations, or architectural decisions grounded in established principles; explicit trade-offs and rationale  
-**Composability**: Use after research (to understand the problem domain before designing); use before code-review (to evaluate the implementation against the design intent); use technical-writer to document the resulting architecture; use strategy-author to translate architectural decisions into strategic options; use backlog-manager to convert design decisions into actionable work items
+**Composability**: Use after research (to understand the problem domain before designing); use before code-review (to evaluate the implementation against the design intent); use technical-writer to document the resulting architecture; use strategy-author to translate architectural decisions into strategic options; use backlog-manager to convert design decisions into actionable work items; use backlog-worker to execute those items
 
 ---
 
