@@ -12,6 +12,7 @@ description: Manages an outcome-focused backlog stored in /work/backlog.md. Hand
 
 ## When Not to Use
 
+- When the task is to execute ready items and perform the actual work they describe — use `backlog-worker` instead
 - When the project requires complex dependency tracking between items
 - When multiple people need concurrent write access (this is a single-file, single-user system)
 - When risk tracking, resource allocation, or sprint planning are required
@@ -38,7 +39,7 @@ description: Manages an outcome-focused backlog stored in /work/backlog.md. Hand
 
 **Input**: A command string (`Add`, `Refine`, `List`, `Next`, `Start`, `Complete`, `Archive`) with an optional item ID and description  
 **Output**: Confirmation of action and/or formatted item(s) from `/work/backlog.md`  
-**Composability**: Use alongside strategy-author (to derive outcomes from strategy) or research (to inform item context)
+**Composability**: Use alongside `strategy-author` (to derive outcomes from strategy) or `research` (to inform item context); use `backlog-worker` to execute ready items and advance them to done
 
 ---
 
