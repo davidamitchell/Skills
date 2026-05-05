@@ -1,6 +1,6 @@
 ---
 name: code-review
-version: "1.0"
+version: "1.1"
 description: Performs systematic, multi-dimensional code review covering correctness,
   security, performance, maintainability, and style. Produces actionable, prioritised
   findings with evidence-based recommendations. Use when asked to review code, audit
@@ -59,6 +59,9 @@ Apply all dimensions in sequence. Do not skip a dimension because no issues are 
 - Are there logic errors, off-by-one errors, or incorrect conditions?
 - Are edge cases and boundary conditions handled?
 - Is error handling present, appropriate, and complete?
+- For every `except` (or equivalent catch) clause, verify the caught type exists in the library's published exception hierarchy; catching a type outside that hierarchy is a defect.
+- Verify that no `except` clause catches a parent type that masks more specific errors when a narrower type is available.
+- Flag any `except Exception` (or language-equivalent catch-all) that lacks explicit written justification at the call site explaining why no narrower type is appropriate.
 - Are there race conditions or concurrency hazards if the code runs in a concurrent context?
 - Are external assumptions (API contracts, data formats, invariants) explicitly validated?
 
