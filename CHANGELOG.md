@@ -9,6 +9,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - `backlog-worker/SKILL.md` — new skill for autonomous execution of backlog items; selects the next ready item, decomposes it into atomic actions, executes each action using the appropriate sub-skill (swe, tdd, research, code-review, technical-writer, feedback), reviews the output, records learnings as append-only entries, and advances the item to done; includes an ambiguity gate that returns vague items to needing_refinement rather than executing them, and a blocker protocol that stops and records rather than fabricating progress
 
 ### Changed
+- `code-review/SKILL.md`: added explicit exception hierarchy check to section 1.1 — for every `except` clause, verify the caught type against the library's published exception hierarchy; `except Exception` requires explicit written justification
 - `backlog-manager/SKILL.md`: added When Not to Use condition redirecting execution tasks to `backlog-worker`; updated Composability to reference `backlog-worker` as the execution counterpart
 - `swe/SKILL.md`: updated Composability to reference `backlog-worker` as the execution companion to `backlog-manager`
 
