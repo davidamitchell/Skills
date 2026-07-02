@@ -6,6 +6,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- `adversarial-review/SKILL.md` — new skill for structured adversarial critique using opposing reviewer roles, debate/rebuttal loops, and synthesis verdicts to expose hidden risks across code, plans, documents, strategies, and agent outputs
 - `backlog-worker/SKILL.md` — new skill for autonomous execution of backlog items; selects the next ready item, decomposes it into atomic actions, executes each action using the appropriate sub-skill (swe, tdd, research, code-review, technical-writer, feedback), reviews the output, records learnings as append-only entries, and advances the item to done; includes an ambiguity gate that returns vague items to needing_refinement rather than executing them, and a blocker protocol that stops and records rather than fabricating progress
 
 ### Changed
