@@ -10,6 +10,7 @@ a specific task to a high standard. Skills are format-compatible with the
 | Skill | Description |
 |---|---|
 | [adr](adr/SKILL.md) | Creates and maintains Architecture Decision Records; captures context, decision, consequences, and alternatives for significant architectural choices |
+| [adversarial-review](adversarial-review/SKILL.md) | Structured adversarial critique with opposing reviewer roles and synthesis to expose hidden risks, weak reasoning, and blind spots across code, plans, documents, strategies, and agent outputs |
 | [backlog-manager](backlog-manager/SKILL.md) | Command-driven outcome-focused backlog in a single file; add, refine, and track work items by observable result |
 | [backlog-worker](backlog-worker/SKILL.md) | Autonomous execution loop for backlog items; selects the next ready item, decomposes it into atomic actions, executes each action using the appropriate sub-skill, reviews the result, records learnings, and advances the item to done |
 | [citation-discipline](citation-discipline/SKILL.md) | Binds every factual claim to a verifiable source at the point of assertion; enforces citation placement, source quality, and precision |
@@ -77,6 +78,8 @@ Skills/
 ├── decisions/                         # Architecture Decision Records
 │   └── 0001-adopt-skill-md-standard.md
 ├── adr/
+│   └── SKILL.md
+├── adversarial-review/
 │   └── SKILL.md
 ├── backlog-manager/
 │   └── SKILL.md
